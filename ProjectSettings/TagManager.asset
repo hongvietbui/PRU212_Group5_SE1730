@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backgound
+    uniqueID: 785022637
+    locked: 0
+  - name: ShadowTree
+    uniqueID: 1887956205
+    locked: 0
+  - name: Grass
+    uniqueID: 887458025
+    locked: 0
+  - name: Dirt
+    uniqueID: 4110915811
+    locked: 0
+  - name: Grassobject
+    uniqueID: 4135282347
+    locked: 0
+  - name: Tree
+    uniqueID: 564874341
+    locked: 0
+  - name: Player
+    uniqueID: 3887151599
+    locked: 0
