@@ -353,6 +353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 899486444}
   parallaxEffect: 0.7
+  infiniteHorizontal: 1
+  infiniteVertical: 0
 --- !u!1 &47849400
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +634,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -407815697
       objectReference: {fileID: 0}
+    - target: {fileID: 2721834415935958793, guid: 5094a9bc82bdf744195a6746f9556f7a, type: 3}
+      propertyPath: moveSpeed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6373696542718960860, guid: 5094a9bc82bdf744195a6746f9556f7a, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -642,19 +648,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346628799377978663, guid: 5094a9bc82bdf744195a6746f9556f7a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2545533
+      value: 1.254553
       objectReference: {fileID: 0}
     - target: {fileID: 8346628799377978663, guid: 5094a9bc82bdf744195a6746f9556f7a, type: 3}
       propertyPath: m_LocalScale.y
-      value: -1.1868145
+      value: -1.186815
       objectReference: {fileID: 0}
     - target: {fileID: 8346628799377978663, guid: 5094a9bc82bdf744195a6746f9556f7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.14
+      value: -2.13
       objectReference: {fileID: 0}
     - target: {fileID: 8346628799377978663, guid: 5094a9bc82bdf744195a6746f9556f7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.78
+      value: -12.24
       objectReference: {fileID: 0}
     - target: {fileID: 8346628799377978663, guid: 5094a9bc82bdf744195a6746f9556f7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1101,7 +1107,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9.9499035
+  orthographic size: 9.949903
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1126,7 +1132,7 @@ Transform:
   m_GameObject: {fileID: 862024358}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: -5.78, z: -9}
+  m_LocalPosition: {x: -1.91, y: -3.06, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1287,10 +1293,10 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 52266376}
+  m_Follow: {fileID: 1408879669}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 9.9499035
+    OrthographicSize: 9.949903
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -1316,8 +1322,8 @@ Transform:
   m_GameObject: {fileID: 899486444}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: -5.78, z: -9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.91, y: -3.06, z: -10}
+  m_LocalScale: {x: 1.0354, y: 1.0354, z: 1.0354}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 97330665}
@@ -1760,6 +1766,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 899486444}
   parallaxEffect: 0.7
+  infiniteHorizontal: 1
+  infiniteVertical: 0
+--- !u!1 &1408879667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1408879669}
+  - component: {fileID: 1408879668}
+  m_Layer: 0
+  m_Name: camFollow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1408879668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408879667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2138797f84b15944988e8a01d3b1afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FollowSpeed: 4
+  Target: {fileID: 52266376}
+--- !u!4 &1408879669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408879667}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.91, y: -3.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1474987712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,7 +1894,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.3489, y: -3.0585, z: 0}
-  m_LocalScale: {x: -3.7997134, y: 2.8869534, z: 1}
+  m_LocalScale: {x: -3.799713, y: 2.886953, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1812628285}
@@ -1860,6 +1914,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 899486444}
   parallaxEffect: 0.8
+  infiniteHorizontal: 1
+  infiniteVertical: 0
 --- !u!1 &1490132927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,6 +2016,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 899486444}
   parallaxEffect: 0.8
+  infiniteHorizontal: 1
+  infiniteVertical: 0
 --- !u!1 &1622117034 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9173019827971995221, guid: 5094a9bc82bdf744195a6746f9556f7a, type: 3}
@@ -2029,7 +2087,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3653786, y: 1.430093}
+  m_Size: {x: 1.365379, y: 1.430093}
   m_EdgeRadius: 0
 --- !u!1 &1679257657
 GameObject:
@@ -2111,7 +2169,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.1708, y: -5.5, z: 0}
-  m_LocalScale: {x: 4.791257, y: 2.5259137, z: 1}
+  m_LocalScale: {x: 4.791257, y: 2.525914, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1172967156}
@@ -2131,6 +2189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 899486444}
   parallaxEffect: 1
+  infiniteHorizontal: 0
+  infiniteVertical: 0
 --- !u!1 &1748252253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,7 +2272,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.1646, y: -2.6131, z: 1}
-  m_LocalScale: {x: 4.7986193, y: 2.9459696, z: 1}
+  m_LocalScale: {x: 4.798619, y: 2.94597, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 10241259}
@@ -2232,6 +2292,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 899486444}
   parallaxEffect: 0.5
+  infiniteHorizontal: 1
+  infiniteVertical: 0
 --- !u!61 &1748252257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2264,7 +2326,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.8432035}
+  m_Offset: {x: 0, y: -3.843204}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2275,7 +2337,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.28, y: 0.31359315}
+  m_Size: {x: 9.28, y: 0.3135931}
   m_EdgeRadius: 0
 --- !u!1 &1802203510
 GameObject:
@@ -2356,7 +2418,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.2686, y: -12.5307, z: 0}
-  m_LocalScale: {x: 1.0200489, y: 0.78060454, z: 1}
+  m_LocalScale: {x: 1.020049, y: 0.7806045, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2070952361}
@@ -2630,6 +2692,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 899486444}
   parallaxEffect: 0.5
+  infiniteHorizontal: 1
+  infiniteVertical: 0
 --- !u!1 &2070952360
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,3 +2796,4 @@ SceneRoots:
   - {fileID: 1474987714}
   - {fileID: 1490132929}
   - {fileID: 1679257659}
+  - {fileID: 1408879669}
