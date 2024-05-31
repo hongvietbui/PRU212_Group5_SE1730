@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public SettingsManager settingsManager; 
+    public SettingsPanelManager settingsManager; 
     //Play new game
     public void PlayNewGame()
     {
@@ -23,7 +23,6 @@ public class MainMenu : MonoBehaviour
     //Open settings panel
     public void OpenSettings()
     {
-        Debug.Log("Settings opened");
         //Open setting panel
         settingsManager.ShowSettings();
     }
