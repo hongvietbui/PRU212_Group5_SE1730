@@ -40,4 +40,19 @@ public class SaveSystem : MonoBehaviour
             return null;
         }
     }
+
+    public static void DeletePlayer()
+    {
+        string path = Application.persistentDataPath + "/playerData";
+
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+            Debug.Log("Save file deleted.");
+        }
+        else
+        {
+            Debug.LogError("Save file not found in " + path);
+        }
+    }
 }
