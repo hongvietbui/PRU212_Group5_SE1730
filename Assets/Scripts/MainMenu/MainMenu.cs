@@ -6,7 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public SettingsPanelManager settingsManager; 
+    public SettingsPanelManager settingsManager;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //Play background music
+        AudioManager.Instance.PlayMusic();
+    }
     //Play new game
     public void PlayNewGame()
     {
