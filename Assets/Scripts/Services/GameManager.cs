@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    private float volume = 1f;
+    //private float volume = 1f;
     private Dictionary<string, KeyCode> keyMappings = new Dictionary<string, KeyCode>();
-    public float Volume
-    {
-        get { return volume; }
-        set
-        {
-            volume = value;
-            AudioListener.volume = volume;
-        }
-    }
+    //public float Volume
+    //{
+    //    get { return volume; }
+    //    set
+    //    {
+    //        volume = value;
+    //        AudioListener.volume = volume;
+    //    }
+    //}
 
     public Dictionary<string, KeyCode> KeyMappings
     {
