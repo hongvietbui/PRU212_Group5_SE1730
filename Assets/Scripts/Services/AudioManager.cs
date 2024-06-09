@@ -86,4 +86,16 @@ public class AudioManager : Singleton<AudioManager>
     {
         effectSource.volume = volume;
     }
+
+    public void SetBackgroundMusicList(List<AudioClip> backgroundMusicList)
+    {
+        backgroundMusics = backgroundMusicList;
+        InitializeBackgroundMusics();
+    }
+
+    public void SetSoundEffectList(List<AudioClip> soundEffectList)
+    {
+        soundEffects = soundEffectList;
+        InitializeSoundEffects();
+    }
 }
