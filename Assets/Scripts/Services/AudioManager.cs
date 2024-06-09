@@ -35,24 +35,25 @@ public class AudioManager : Singleton<AudioManager>
         }
     }
 
-    private void InitializeBackgroundMusics()
-    {
+    private void InitializeBackgroundMusics() {
+        //initialize background music dictionary
         backgroundMusicDict = new Dictionary<string, AudioClip>();
-        foreach (AudioClip backgroundMusic in backgroundMusics) {
-            backgroundMusicDict.Add(backgroundMusic.name, backgroundMusic);
+        foreach (AudioClip clip in backgroundMusics)
+        {
+            backgroundMusicDict.Add(clip.name, clip);
         }
     }
 
-    public void PlayMusic(string musicName) {
-        if (backgroundMusicDict.ContainsKey(musicName))
+    public void PlayMusic(string backgroundMusic) {
+        //play background music
+        if (backgroundMusicDict.ContainsKey(backgroundMusic))
         {
-            musicSource.clip = backgroundMusicDict[musicName];
-            musicSource.loop = true;
+            musicSource.clip = backgroundMusicDict[backgroundMusic];
             musicSource.Play();
         }
         else
         {
-            Debug.LogWarning("Background music not found: " + musicName);
+            Debug.LogError("Background music with name " + backgroundMusic + " not found in the dictionary");
         }
     }
 
