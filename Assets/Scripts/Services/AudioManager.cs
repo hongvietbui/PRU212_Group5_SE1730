@@ -9,10 +9,11 @@ public class AudioManager : Singleton<AudioManager>
     public AudioSource effectSource;
 
     [Header("Audio Clips")]
-    public AudioClip backgroundMusic;
+    public List<AudioClip> backgroundMusics;
     public List<AudioClip> soundEffects;
 
     private Dictionary<string, AudioClip> soundEffectDict;
+    private Dictionary<string, AudioClip> backgroundMusicDict;
 
     public override void Awake()
     {
@@ -21,6 +22,7 @@ public class AudioManager : Singleton<AudioManager>
         if (this == Instance)
         {
             InitializeSoundEffects();
+            InitializeBackgroundMusics();
         }
     }
 
@@ -33,11 +35,25 @@ public class AudioManager : Singleton<AudioManager>
         }
     }
 
-    public void PlayMusic() {
-        if(musicSource.isPlaying) return;
-        musicSource.clip = backgroundMusic;
-        musicSource.loop = true;
-        musicSource.Play();
+    private void InitializeBackgroundMusics()
+    {
+        backgroundMusicDict = new Dictionary<string, AudioClip>();
+        foreach (AudioClip backgroundMusic in backgroundMusics) {
+            backgroundMusicDict.Add(backgroundMusic.name, backgroundMusic);
+        }
+    }
+
+    public void PlayMusic(string musicName) {
+        if (backgroundMusicDict.ContainsKey(musicName))
+        {
+            musicSource.clip = backgroundMusicDict[musicName];
+            musicSource.loop = true;
+            musicSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Background music not found: " + musicName);
+        }
     }
 
     public void StopMusic() {
