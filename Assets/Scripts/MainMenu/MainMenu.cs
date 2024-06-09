@@ -12,12 +12,12 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         //Play background music
-        AudioManager.Instance.PlayMusic();
+        AudioManager.Instance.PlayMusic("horror1");
     }
     //Play new game
     public void PlayNewGame()
     {
-        SceneManager.LoadScene("Scene1");
+        SceneManager.LoadScene("Scene03");
     }
 
     //open load game menu

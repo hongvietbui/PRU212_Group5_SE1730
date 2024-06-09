@@ -9,10 +9,11 @@ public class AudioManager : Singleton<AudioManager>
     public AudioSource effectSource;
 
     [Header("Audio Clips")]
-    public AudioClip backgroundMusic;
+    public List<AudioClip> backgroundMusics;
     public List<AudioClip> soundEffects;
 
     private Dictionary<string, AudioClip> soundEffectDict;
+    private Dictionary<string, AudioClip> backgroundMusicDict;
 
     public override void Awake()
     {
@@ -21,6 +22,7 @@ public class AudioManager : Singleton<AudioManager>
         if (this == Instance)
         {
             InitializeSoundEffects();
+            InitializeBackgroundMusics();
         }
     }
 
@@ -33,11 +35,26 @@ public class AudioManager : Singleton<AudioManager>
         }
     }
 
-    public void PlayMusic() {
-        if(musicSource.isPlaying) return;
-        musicSource.clip = backgroundMusic;
-        musicSource.loop = true;
-        musicSource.Play();
+    private void InitializeBackgroundMusics() {
+        //initialize background music dictionary
+        backgroundMusicDict = new Dictionary<string, AudioClip>();
+        foreach (AudioClip clip in backgroundMusics)
+        {
+            backgroundMusicDict.Add(clip.name, clip);
+        }
+    }
+
+    public void PlayMusic(string backgroundMusic) {
+        //play background music
+        if (backgroundMusicDict.ContainsKey(backgroundMusic))
+        {
+            musicSource.clip = backgroundMusicDict[backgroundMusic];
+            musicSource.Play();
+        }
+        else
+        {
+            Debug.LogError("Background music with name " + backgroundMusic + " not found in the dictionary");
+        }
     }
 
     public void StopMusic() {
@@ -69,5 +86,17 @@ public class AudioManager : Singleton<AudioManager>
     public void SetSoundEffectVolume(float volume)
     {
         effectSource.volume = volume;
+    }
+
+    public void SetBackgroundMusicList(List<AudioClip> backgroundMusicList)
+    {
+        backgroundMusics = backgroundMusicList;
+        InitializeBackgroundMusics();
+    }
+
+    public void SetSoundEffectList(List<AudioClip> soundEffectList)
+    {
+        soundEffects = soundEffectList;
+        InitializeSoundEffects();
     }
 }
