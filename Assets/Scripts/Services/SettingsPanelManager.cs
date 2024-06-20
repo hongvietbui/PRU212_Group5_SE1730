@@ -16,15 +16,13 @@ public class SettingsPanelManager : MonoBehaviour
     void Start()
     {
         volumeSlider.onValueChanged.AddListener(SetVolume);
-        volumeSlider.value = GameManager.Instance.Volume;
-
-
+        volumeSlider.value = AudioManager.Instance.musicSource.volume;
     }
 
     //set volume
     public void SetVolume(float volume)
     {
-        GameManager.Instance.Volume = volume;
+        AudioManager.Instance.SetMusicVolume(volume);
     }
 
     //show settings panel

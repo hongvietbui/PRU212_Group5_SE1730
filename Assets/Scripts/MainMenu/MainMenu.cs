@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public SettingsPanelManager settingsManager; 
+    public SettingsPanelManager settingsManager;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //Play background music
+        AudioManager.Instance.PlayMusic("horror1");
+    }
     //Play new game
     public void PlayNewGame()
     {
-        SceneManager.LoadScene("Scene1");
+        SceneManager.LoadScene("Scene03");
     }
 
     //open load game menu
