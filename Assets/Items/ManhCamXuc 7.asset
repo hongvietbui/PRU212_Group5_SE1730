@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d7c1d32ade0bdc418d8ad1c199aa97b, type: 3}
-  m_Name: New Item
+  m_Name: ManhCamXuc 7
   m_EditorClassIdentifier: 
-  ItemName: Manh Cam Xuc
-  Icon: {fileID: 21300000, guid: 82fc1c6e6c1b50e47ba16cb915543930, type: 3}
+  ItemName: 'Manh Cam Xuc '
+  Icon: {fileID: 21300000, guid: 1c7b88a932e677d4398b1a20d12881e3, type: 3}
