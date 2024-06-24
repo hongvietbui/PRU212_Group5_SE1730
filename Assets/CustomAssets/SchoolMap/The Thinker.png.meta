@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47806f3fa57138942bcd0a384120348e
+guid: 0ba406b23787aae4986e1744092fe664
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,70 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: D3_5_hallway_secondfloor_layer(1)_0
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 73
-        width: 57
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a88bd5a7455653a48b9cdda8b4823fa2
-      internalID: 1513518565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D3_5_hallway_secondfloor_layer(1)_1
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 96
-        width: 33
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3917211186343cc4f919e56aae259365
-      internalID: 1937923190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D3_5_hallway_secondfloor_layer(1)_2
-      rect:
-        serializedVersion: 2
-        x: 590
-        y: 23
-        width: 65
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 655def69121877e4690d9651f020f197
-      internalID: 1049333166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -182,10 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      D3_5_hallway_secondfloor_layer(1)_0: 1513518565
-      D3_5_hallway_secondfloor_layer(1)_1: 1937923190
-      D3_5_hallway_secondfloor_layer(1)_2: 1049333166
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
