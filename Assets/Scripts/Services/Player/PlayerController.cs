@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterWalking : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float speed;
 
@@ -10,6 +10,8 @@ public class CharacterWalking : MonoBehaviour
     private Animator animator;
     private Vector2 movement;
     private Vector2 lastMovement;
+
+    public bool isDialogueActive = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,13 @@ public class CharacterWalking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDialogueActive) {
+            //Make player stop moving when dialogue is active
+            movement = Vector2.zero;
+            animator.SetFloat("Speed", 0);
+            return;
+        }
+
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
 
