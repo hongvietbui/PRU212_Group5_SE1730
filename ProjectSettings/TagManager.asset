@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Platform
+    uniqueID: 2390470719
+    locked: 0
   - name: Backgound
     uniqueID: 785022637
     locked: 0
@@ -60,6 +63,12 @@ TagManager:
   - name: Tree
     uniqueID: 564874341
     locked: 0
+  - name: Building
+    uniqueID: 2145089733
+    locked: 0
   - name: Player
     uniqueID: 3887151599
+    locked: 0
+  - name: UI
+    uniqueID: 3385707521
     locked: 0
