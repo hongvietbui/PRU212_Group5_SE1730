@@ -9,7 +9,6 @@ public class TheThinkerStatue : MonoBehaviour
     public GameObject dialoguePanel;
     public TMP_Text dialogueTextTMP;
     private bool isPlayerNear = false;
-    public TMP_Text interactMessageText;
     private PlayerController playerController;
     public TypeWriterEffect typeWriterEffect;
     // Start is called before the first frame update
@@ -17,7 +16,6 @@ public class TheThinkerStatue : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
         canvas.SetActive(false);
-        interactMessageText.gameObject.SetActive(false);
     }
     // Update is called once per frame
     void Update()
@@ -41,9 +39,7 @@ public class TheThinkerStatue : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerNear = true;
-            interactMessageText.gameObject.SetActive(true);
             canvas.SetActive(true);
-            interactMessageText.text = "Press E to interact";
             playerController = collision.GetComponent<PlayerController>();
         }
     }
@@ -53,8 +49,8 @@ public class TheThinkerStatue : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerNear = false;
-            canvas.SetActive(false);
-            interactMessageText.gameObject.SetActive(false);
+            if(canvas!=null)
+                canvas.SetActive(false);
             dialoguePanel.SetActive(false);
             canvas.SetActive(false);
         }
