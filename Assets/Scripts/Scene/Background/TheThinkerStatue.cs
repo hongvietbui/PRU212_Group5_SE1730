@@ -67,8 +67,8 @@ public class TheThinkerStatue : MonoBehaviour
         if(playerController != null)
             playerController.isDialogueActive = true;
 
-        //typeWriterEffect.StartTypewriterEffect("The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...");
-        dialogueTextTMP.text = "The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...";
+        typeWriterEffect.StartTypewriterEffect("The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...");
+        //dialogueTextTMP.text = "The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...";
     }
 
     public void HideDialogue()
