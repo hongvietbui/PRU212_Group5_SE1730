@@ -16,7 +16,6 @@ public class NumberBox : MonoBehaviour
         this.GetComponent<SpriteRenderer>().sprite = sprite;
         UpdatePos(i, j);
         this.swapFunc = swapFunc;
-
     }
 
     public void UpdatePos(int i, int j)
@@ -45,7 +44,7 @@ public class NumberBox : MonoBehaviour
 
     public bool isEmpty()
     {
-        return index == 25;
+        return index == 16;
     }
 
     void OnMouseDown()

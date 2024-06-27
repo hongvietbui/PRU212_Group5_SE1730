@@ -5,23 +5,22 @@ using UnityEngine;
 public class SlidingPuzzle : MonoBehaviour
 {
     public NumberBox boxPrefab;
-    public NumberBox[,] boxes = new NumberBox[5, 5];
+    public NumberBox[,] boxes = new NumberBox[4, 4];
     public Sprite[] sprites;
 
     void Start()
     {
         Init();
-        for (int i = 0; i < 99; i++)
+        for (int i = 0; i < 999; i++)
             Shuffle();
     }
-
 
     void Init()
     {
         int n = 0;
-        for (int y = 4; y >= 0; y--)
+        for (int y = 3; y >= 0; y--)
         {
-            for (int x = 0; x < 5; x++)
+            for (int x = 0; x < 4; x++)
             {
                 NumberBox box = Instantiate(boxPrefab, new Vector2(x, y), Quaternion.identity);
                 box.Init(x, y, n + 1, sprites[n], clickToSwap);
@@ -55,7 +54,7 @@ public class SlidingPuzzle : MonoBehaviour
     int getDx(int x, int y)
     {
         //is right empty
-        if (x < 4 && boxes[x + 1, y].isEmpty())
+        if (x < 3 && boxes[x + 1, y].isEmpty())
         {
             return 1;
         }
@@ -69,7 +68,7 @@ public class SlidingPuzzle : MonoBehaviour
     int getDy(int x, int y)
     {
         //is up empty
-        if (y < 4 && boxes[x, y + 1].isEmpty())
+        if (y < 3 && boxes[x, y + 1].isEmpty())
         {
             return 1;
         }
@@ -77,14 +76,15 @@ public class SlidingPuzzle : MonoBehaviour
         //is down empty
         if (y > 0 && boxes[x, y - 1].isEmpty())
             return -1;
+
         return 0;
     }
 
     void Shuffle()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 4; i++)
         {
-            for (int j = 0; j < 5; j++)
+            for (int j = 0; j < 4; j++)
             {
                 if (boxes[i, j].isEmpty())
                 {
@@ -100,9 +100,9 @@ public class SlidingPuzzle : MonoBehaviour
     Vector2 getValidMove(int x, int y)
     {
         Vector2 pos = new Vector2();
-        int n = Random.Range(0, 4);
         do
         {
+            int n = Random.Range(0, 4);
             if (n == 0)
             {
                 pos = Vector2.left;
@@ -115,23 +115,24 @@ public class SlidingPuzzle : MonoBehaviour
             {
                 pos = Vector2.up;
             }
-            else if (n == 3)
+            else
             {
                 pos = Vector2.down;
             }
 
         } while (!(isValidRange(x + (int)pos.x) && isValidRange(y + (int)pos.y)) || isRepeatMove(pos));
+
+        lastMove = pos;
         return pos;
     }
 
     bool isValidRange(int n)
     {
-        return n >= 0 && n <= 4;
+        return n >= 0 && n <= 3;
     }
 
     bool isRepeatMove(Vector2 pos)
     {
         return pos * -1 == lastMove;
     }
-
 }
