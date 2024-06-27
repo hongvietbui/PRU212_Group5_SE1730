@@ -1,3 +1,4 @@
+using narrenschlag.dialoguez;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -64,22 +65,22 @@ public class TheThinkerStatue : MonoBehaviour
     }
 
     void ShowDialogue() {
-        canvas.SetActive(true);
-        dialoguePanel.SetActive(true);
+        //canvas.SetActive(true);
+        //dialoguePanel.SetActive(true);
 
-        if(playerController != null)
-            playerController.isDialogueActive = true;
+        //if(playerController != null)
+        //    playerController.isDialogueActive = true;
 
-        typeWriterEffect.StartTypewriterEffect("The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...");
-        //dialogueTextTMP.text = "The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...";
+        //typeWriterEffect.StartTypewriterEffect("The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...");
+        ////dialogueTextTMP.text = "The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...";
     }
 
     public void HideDialogue()
     {
-        canvas.SetActive(false);
-        dialoguePanel.SetActive(false);
+        //canvas.SetActive(false);
+        //dialoguePanel.SetActive(false);
 
-        if (playerController != null)
-            playerController.isDialogueActive = false;
+        //if (playerController != null)
+        //    playerController.isDialogueActive = false;
     }
 }

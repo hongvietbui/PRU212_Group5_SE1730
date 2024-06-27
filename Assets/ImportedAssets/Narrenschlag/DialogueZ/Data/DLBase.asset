@@ -37,7 +37,7 @@ MonoBehaviour:
       requ: 
       er: 0
     - next_idi: 3
-      message: Get lost
+      message: Get lost//quit//
       requ: 
       er: 0
     auto_next_idi: 1
