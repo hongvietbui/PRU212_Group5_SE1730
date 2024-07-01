@@ -37,7 +37,7 @@ MonoBehaviour:
       requ: 
       er: 0
     - next_idi: 3
-      message: Get lost//quit//
+      message: Get lost
       requ: 
       er: 0
     auto_next_idi: 1
@@ -46,8 +46,17 @@ MonoBehaviour:
     color_type: {r: 0.06407974, g: 0.2160746, b: 0.9056604, a: 1}
     eie: 1
     title: Narrator
-    message: Well. You GET LOST!
+    message: Well. You GET LOST!//call,print_hello//
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 1
+    auto_next_idi: 4
+  - ids: print_hello
+    idi: 4
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Narrator
+    message: Type your message here! //call,print_hello//
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 3
   auto_save: 0
