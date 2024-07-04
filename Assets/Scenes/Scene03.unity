@@ -219,6 +219,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6236956588818831505, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
+      propertyPath: debug_start
+      value: dialogue_1
+      objectReference: {fileID: 0}
     - target: {fileID: 7434002590082709691, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -1668,7 +1672,6 @@ GameObject:
   - component: {fileID: 211397752}
   - component: {fileID: 211397753}
   - component: {fileID: 211397754}
-  - component: {fileID: 211397756}
   - component: {fileID: 211397757}
   - component: {fileID: 211397758}
   m_Layer: 0
@@ -1825,18 +1828,6 @@ CircleCollider2D:
   m_Offset: {x: 0.045430996, y: -0.72351915}
   serializedVersion: 2
   m_Radius: 2.3953574
---- !u!114 &211397756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211397750}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6f5faa5ecaf1c24cb28bab50a08145a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &211397757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1864,10 +1855,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactKey: 101
   interactableEvents:
-  - eventName: 
+  - eventName: Change dialogue database
     unityEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 641449036}
+          m_TargetAssemblyTypeName: narrenschlag.dialoguez.DialogueZ, Assembly-CSharp
+          m_MethodName: SetDatabase
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 47dd0927f71d5b343bd165dc14f61e30, type: 2}
+            m_ObjectArgumentAssemblyTypeName: narrenschlag.dialoguez.DialogueZBase,
+              Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventName: Active dialogue canvas
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2116852573}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventName: Active notes
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 612719547}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!1 &230156004
 GameObject:
   m_ObjectHideFlags: 0
@@ -7886,7 +7922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &573945712
 Transform:
   m_ObjectHideFlags: 0
@@ -7968,6 +8004,22 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
           m_MethodName: set_text
           m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: alone
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventName: Delete note
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 573945711}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16665,7 +16717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &612719548
 Transform:
   m_ObjectHideFlags: 0
@@ -16795,7 +16847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactKey: 101
   interactableEvents:
-  - eventName: Open Canvas
+  - eventName: Open Note Canvas
     unityEvent:
       m_PersistentCalls:
         m_Calls:
@@ -16855,6 +16907,53 @@ MonoBehaviour:
             m_StringArgument: You
             m_BoolArgument: 0
           m_CallState: 2
+  - eventName: Go to next note
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1701803654}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: You
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 612719547}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: You
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &641449033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4059650706708931090, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
+  m_PrefabInstance: {fileID: 981574393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &641449036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641449033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9b08d5632727b4189703dbba102d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  db: {fileID: 11400000, guid: 66ac15d58edf39644a8afca4ac464ea2, type: 2}
+  events: []
 --- !u!1 &855236196
 GameObject:
   m_ObjectHideFlags: 0
@@ -19475,10 +19574,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4059650706708931091, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4059650706708931090, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 641449036}
   m_SourcePrefab: {fileID: 100100000, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
 --- !u!1 &1017450406
 GameObject:
@@ -128249,6 +128352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleKey: 101
+  dialogueList: []
+  dialogueCanvas: {fileID: 0}
 --- !u!1 &1678670475
 GameObject:
   m_ObjectHideFlags: 0
@@ -128316,7 +128421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1701803655
 Transform:
   m_ObjectHideFlags: 0
@@ -128405,6 +128510,34 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: are
             m_BoolArgument: 0
+          m_CallState: 2
+  - eventName: Go to next note
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1701803654}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: are
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2100271308}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: are
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!58 &1701803657
 CircleCollider2D:
@@ -145477,7 +145610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2100271309
 Transform:
   m_ObjectHideFlags: 0
@@ -145566,6 +145699,34 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: not
             m_BoolArgument: 0
+          m_CallState: 2
+  - eventName: Go to next note
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2100271308}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: not
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 573945711}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: not
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!58 &2100271311
 CircleCollider2D:

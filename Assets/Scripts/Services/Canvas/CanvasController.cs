@@ -1,3 +1,4 @@
+using narrenschlag.dialoguez;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,21 +6,13 @@ using UnityEngine;
 public class CanvasController : MonoBehaviour
 {
     public KeyCode toggleKey = KeyCode.E;
+    public List<DialogueZBase> dialogueList;
+    public Canvas dialogueCanvas;
+    private int state = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        //foreach (GameObject canvas in targetCanvasList)
-        //{
-        //    if(canvas != null)
-        //    {
-        //        canvas.SetActive(false);
-        //    }
-        //    else
-        //    {
-        //        Debug.LogError("Canvas is null in CanvasController: " + this.gameObject.name);
-        //    }
-        //}
     }
 
     // Update is called once per frame
@@ -37,6 +30,7 @@ public class CanvasController : MonoBehaviour
         if(this.gameObject.activeSelf)
         {
             this.gameObject.SetActive(false);
+            displayDialogue(dialogueList);
         }
         else
         {
@@ -46,5 +40,20 @@ public class CanvasController : MonoBehaviour
 
     public void ActiveCanvas() {
         this.gameObject.SetActive(true);
+    }
+
+    public void displayDialogue(List<DialogueZBase> dialogueList)
+    {
+        //Check if the state is valid or not
+        if (state + 1 > dialogueList.Count || dialogueList.Count == 0 || dialogueList == null)
+        {
+            state = 0;
+            dialogueCanvas.gameObject.SetActive(false);
+            return;
+        }
+
+        DialogueZ.SetDatabase(dialogueList[state]);
+        dialogueCanvas.gameObject.SetActive(true);
+        state++;
     }
 }
