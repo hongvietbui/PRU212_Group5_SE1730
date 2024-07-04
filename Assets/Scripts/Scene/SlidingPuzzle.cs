@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SlidingPuzzle : MonoBehaviour
 {
@@ -13,6 +14,14 @@ public class SlidingPuzzle : MonoBehaviour
 		Init();
 		for (int i = 0; i < 999; i++)
 			Shuffle();
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			SceneManager.LoadScene("Scene5_ExitClassRoom");
+		}
 	}
 
 	void Init()
@@ -158,6 +167,7 @@ public class SlidingPuzzle : MonoBehaviour
 				n++;
 			}
 		}
+		SceneManager.LoadScene("Scene5_ExitClassRoom");
 		return true;
 	}
 }
