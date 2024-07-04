@@ -1,3 +1,4 @@
+using narrenschlag.dialoguez;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -12,10 +13,14 @@ public class TheThinkerStatue : MonoBehaviour
     private PlayerController playerController;
     public TypeWriterEffect typeWriterEffect;
     // Start is called before the first frame update
+
+    private Material originalMaterial;
+    public Material highlightMaterial;
     void Start()
     {
         dialoguePanel.SetActive(false);
         canvas.SetActive(false);
+        originalMaterial = GetComponent<SpriteRenderer>().material;
     }
     // Update is called once per frame
     void Update()
@@ -41,6 +46,8 @@ public class TheThinkerStatue : MonoBehaviour
             isPlayerNear = true;
             canvas.SetActive(true);
             playerController = collision.GetComponent<PlayerController>();
+            //Change material of the statue
+            GetComponent<SpriteRenderer>().material = highlightMaterial;
         }
     }
 
@@ -49,30 +56,31 @@ public class TheThinkerStatue : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerNear = false;
-            if(canvas!=null)
+            if (canvas != null)
                 canvas.SetActive(false);
             dialoguePanel.SetActive(false);
             canvas.SetActive(false);
+            GetComponent<SpriteRenderer>().material = originalMaterial;
         }
     }
 
     void ShowDialogue() {
-        canvas.SetActive(true);
-        dialoguePanel.SetActive(true);
+        //canvas.SetActive(true);
+        //dialoguePanel.SetActive(true);
 
-        if(playerController != null)
-            playerController.isDialogueActive = true;
+        //if(playerController != null)
+        //    playerController.isDialogueActive = true;
 
-        typeWriterEffect.StartTypewriterEffect("The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...");
-        //dialogueTextTMP.text = "The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...";
+        //typeWriterEffect.StartTypewriterEffect("The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...");
+        ////dialogueTextTMP.text = "The Thinker is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows...";
     }
 
     public void HideDialogue()
     {
-        canvas.SetActive(false);
-        dialoguePanel.SetActive(false);
+        //canvas.SetActive(false);
+        //dialoguePanel.SetActive(false);
 
-        if (playerController != null)
-            playerController.isDialogueActive = false;
+        //if (playerController != null)
+        //    playerController.isDialogueActive = false;
     }
 }
