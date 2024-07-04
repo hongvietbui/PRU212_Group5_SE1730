@@ -110,7 +110,6 @@ namespace narrenschlag.dialoguez
                     res = e;
                     break;
                 }
-
             return res != null;
         }
 
@@ -128,7 +127,9 @@ namespace narrenschlag.dialoguez
         }
         #endregion
 
-        public void Print(string s) { Debug.Log(s); }
+        public void Print(string s) {
+            Debug.Log(s); 
+        }
 
         #region singleton
         public static DialogueZ singleton;
