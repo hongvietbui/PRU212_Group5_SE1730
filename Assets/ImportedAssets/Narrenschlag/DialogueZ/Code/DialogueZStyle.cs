@@ -32,8 +32,8 @@ namespace narrenschlag.dialoguez
             // Error Log if no singleton
             if (!d) Debug.LogError("No DialogueZ Manager found!");
 
-            // Set PlayerPref playername to "Max"
-            PlayerPrefs.SetString("playername", "Max");
+            //// Set PlayerPref playername to "Max"
+            //PlayerPrefs.SetString("playername", "Max");
 
             // Return if no DialogueZ Manager
             if (!d) return;
