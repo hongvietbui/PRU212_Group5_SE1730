@@ -61,6 +61,12 @@ namespace narrenschlag.dialoguez
             s.SetupDictionaries();
         }
 
+        public static DialogueZBase GetDialogueZBase()
+        {
+            DialogueZ s = singleton;
+            return s.db;
+        }
+
         public static bool TryGetDialogue_Ids(string ids, out DialogueZElement res)
         {
             DialogueZ s = singleton;
