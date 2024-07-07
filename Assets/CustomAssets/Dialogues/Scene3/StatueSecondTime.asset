@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
-  m_Name: StatueFirstTime
+  m_Name: StatueSecondTime
   m_EditorClassIdentifier: 
   elements:
   - ids: dialogue_1
@@ -18,8 +18,8 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Narrator
-    message: The statue stands silently in the school yard, bearing an aura of mystery
-      and majesty. It seems to have witnessed the passage of time."
+    message: The statue no longer holds the same mystery as before. It feels like
+      an old friend, always there to listen.
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
@@ -28,8 +28,17 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: MainCharacter
-    message: I feel there's something unusual about this statue... It's as if it
-      wants to tell me something.//quit
+    message: Now, I feel this statue is like a friend. It helped me realize so many
+      valuable things.
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 3
+  - ids: dialogue_3
+    idi: 3
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: MainCharacter
+    message: Thank you, even though you're just a statue.//quit
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
