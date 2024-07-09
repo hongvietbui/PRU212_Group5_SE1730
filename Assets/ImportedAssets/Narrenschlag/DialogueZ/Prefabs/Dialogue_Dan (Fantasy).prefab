@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db2498396b4cc242a9a1b916004b793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug_start: _test
+  debug_start: dialogue_1
   typing_speed: 0.05
   message_always_up: 1
   follow_always_up: 1
