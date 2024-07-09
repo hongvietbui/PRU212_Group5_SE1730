@@ -3164,7 +3164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPaused: 0
-  items: []
+  items:
+  - {fileID: 11400000, guid: 98cc78f11085d8e4dab06c66a281359d, type: 2}
+  - {fileID: 11400000, guid: 80d27310e2d87cc44a7b5a4b45cbd844, type: 2}
   slots:
   - {fileID: 971099006716608768}
   - {fileID: 1406848818}
@@ -3379,7 +3381,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.0750122, y: -0.6750183}
+  m_AnchoredPosition: {x: -7, y: -181}
   m_SizeDelta: {x: -113.85, y: -98.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1202601429
