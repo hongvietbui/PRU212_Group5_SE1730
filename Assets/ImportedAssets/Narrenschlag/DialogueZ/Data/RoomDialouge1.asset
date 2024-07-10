@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
+  m_Name: RoomDialouge1
+  m_EditorClassIdentifier: 
+  elements:
+  - ids: _test
+    idi: 1
+    color_type: {r: 0.8773585, g: 0.1614009, b: 0.1614009, a: 1}
+    eie: 1
+    title: Player
+    message: What's wrong with my computer?
+    audio: {fileID: 8300000, guid: bb571e60efe053c4d8da4f39b4075d9f, type: 3}
+    follows: []
+    auto_next_idi: 2
+  - ids: dialogue_2
+    idi: 2
+    color_type: {r: 1, g: 1, b: 1, a: 1}
+    eie: 1
+    title: Player
+    message: Who are you?
+    audio: {fileID: 8300000, guid: d35a8e6390da3024ea36f31a729570bd, type: 3}
+    follows: []
+    auto_next_idi: 3
+  - ids: dialogue_3
+    idi: 3
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Player
+    message: Why are you so dark?
+    audio: {fileID: 8300000, guid: bb571e60efe053c4d8da4f39b4075d9f, type: 3}
+    follows: []
+    auto_next_idi: 4
+  - ids: dialogue_4
+    idi: 4
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Player
+    message: Are you really me?
+    audio: {fileID: 8300000, guid: d35a8e6390da3024ea36f31a729570bd, type: 3}
+    follows: []
+    auto_next_idi: 5
+  - ids: dialogue_5
+    idi: 5
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Black Shadow
+    message: Yes, I'm the part of you that carries the weight of your worries.
+    audio: {fileID: 8300000, guid: bb571e60efe053c4d8da4f39b4075d9f, type: 3}
+    follows: []
+    auto_next_idi: 6
+  - ids: dialogue_6
+    idi: 6
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Player
+    message: Why are you here?
+    audio: {fileID: 8300000, guid: d35a8e6390da3024ea36f31a729570bd, type: 3}
+    follows: []
+    auto_next_idi: 7
+  - ids: dialogue_7
+    idi: 7
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Black Shadow
+    message: To fix your computer, you need to confront something.
+    audio: {fileID: 8300000, guid: bb571e60efe053c4d8da4f39b4075d9f, type: 3}
+    follows: []
+    auto_next_idi: 8
+  - ids: dialogue_8
+    idi: 8
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Player
+    message: Confront what?
+    audio: {fileID: 8300000, guid: d35a8e6390da3024ea36f31a729570bd, type: 3}
+    follows: []
+    auto_next_idi: 9
+  - ids: dialogue_9
+    idi: 9
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Black Shadow
+    message: Look around you... Look... around..
+    audio: {fileID: 8300000, guid: bb571e60efe053c4d8da4f39b4075d9f, type: 3}
+    follows: []
+    auto_next_idi: 10
+  - ids: dialogue_10
+    idi: 10
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Black Shadow
+    message: ...Remeber.....The...Past...Trauma.....The.....Number
+    audio: {fileID: 8300000, guid: ed7d5936a8af51640bd4c39e5240bbc6, type: 3}
+    follows: []
+    auto_next_idi: 11
+  - ids: dialogue_11
+    idi: 11
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Black Shadow
+    message: .....GoodBye.....//call,event_1
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 12
+  - ids: dialogue_12
+    idi: 12
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Player
+    message: //call,hide_dialogue
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 11
+  auto_save: 0

@@ -18214,6 +18214,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &641449038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18227,7 +18230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueCanvas: {fileID: 2116852576}
-  dialoguePrefab: {fileID: 8110356478045138045, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
+  dialoguePrefab: {fileID: 8110356478045138045, guid: 4e3b41fe60d42654abace1fcabb63176, type: 3}
 --- !u!1 &855236196
 GameObject:
   m_ObjectHideFlags: 0
