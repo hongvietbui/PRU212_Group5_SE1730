@@ -129669,7 +129669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusicList:
-  - {fileID: 8300000, guid: 7a03ad48d4dc45c4f9cc86b91ddf57d6, type: 3}
+  - {fileID: 8300000, guid: 586a8ea4b7821c141b84822b7014beaf, type: 3}
   effectList:
   - {fileID: 8300000, guid: 0c7b7727c86dc014bb689ad419ac56b0, type: 3}
 --- !u!4 &1678670478

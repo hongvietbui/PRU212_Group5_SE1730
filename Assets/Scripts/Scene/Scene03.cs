@@ -15,7 +15,7 @@ public class SceneManagement : MonoBehaviour
         //Reload effect list
         AudioManager.Instance.SetSoundEffectList(effectList);
         //Play background music
-        AudioManager.Instance.PlayMusic("horror4");
+        AudioManager.Instance.PlayMusic("prologue");
     }
 
     // Update is called once per frame
