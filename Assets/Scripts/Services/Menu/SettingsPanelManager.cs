@@ -10,8 +10,10 @@ public class SettingsPanelManager : MonoBehaviour
     public TextMeshProUGUI volumeValue;
     public GameObject settingPanel;
     public GameObject mainMenuPanel;
+    public TMPro.TextMeshProUGUI MainMenuText;
+
     //Key mapping configuration
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,8 @@ public class SettingsPanelManager : MonoBehaviour
     //show settings panel
     public void ShowSettings()
     {
+        //Hide main menu text
+        MainMenuText.gameObject.SetActive(false);
         settingPanel.SetActive(true);
         mainMenuPanel.SetActive(false);
     }
@@ -35,6 +39,8 @@ public class SettingsPanelManager : MonoBehaviour
     //hide settings panel
     public void HideSettings()
     {
+        //Show MainMenuText
+        MainMenuText.gameObject.SetActive(true);
         settingPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
     }

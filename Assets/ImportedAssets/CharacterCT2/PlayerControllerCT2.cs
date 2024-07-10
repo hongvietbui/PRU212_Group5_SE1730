@@ -31,6 +31,10 @@ public class PlayerControllerCT2 : MonoBehaviour
         hMovement(Char_speed);
         Jump();
         checkStatus();
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    SaveLoadData.SavePlayerPosition(transform.position);
+        //}
     }
 
     void hMovement(float speed)
