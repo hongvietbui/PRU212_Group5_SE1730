@@ -98,7 +98,7 @@ public class InventoryManager : MonoBehaviour
 
     public void RemoveItem(Item _item)
     {
-        if(items.Contains(_item))//IF There is one existing item in our bags(List)
+        if(items.Contains(_item))
         {
             for(int i = 0; i < items.Count; i++)
             {
@@ -107,7 +107,7 @@ public class InventoryManager : MonoBehaviour
                     items[i].number--;
                     if(items[i].number == 0)
                     {
-                        //WE HAVE TO REMOVE THIS ITEM
+                        
                         items.Remove(_item);
                     }
                 }

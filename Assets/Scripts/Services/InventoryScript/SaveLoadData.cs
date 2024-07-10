@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 public class SaveLoadData : MonoBehaviour
 {
 
@@ -42,24 +43,25 @@ public class SaveLoadData : MonoBehaviour
         }
     }
 
-    public static void SavePlayerPosition(Vector3 position)
+    public static void SavePlayerPosition(Vector3 position, string checkpointName)
     {
         string filePath = Application.persistentDataPath + "/playerPosition.json";
-        PlayerPosition playerPosition = new PlayerPosition(position);
+        string sceneName = SceneManager.GetActiveScene().name;
+        PlayerPosition playerPosition = new PlayerPosition(position, sceneName, checkpointName);
         string json = JsonUtility.ToJson(playerPosition);
         File.WriteAllText(filePath, json);
     }
 
-    public static Vector3 LoadPlayerPosition()
+    public static PlayerPosition LoadPlayerPosition()
     {
         string filePath = Application.persistentDataPath + "/playerPosition.json";
         if (File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
             PlayerPosition playerPosition = JsonUtility.FromJson<PlayerPosition>(json);
-            return playerPosition.ToVector3();
+            return playerPosition;
         }
-        return Vector3.zero; // Trả về (0,0,0) nếu không có file
+        return null; 
     }
 
 }
@@ -80,12 +82,16 @@ public class PlayerPosition
     public float x;
     public float y;
     public float z;
+    public string sceneName;
+    public string checkpointName;
 
-    public PlayerPosition(Vector3 position)
+    public PlayerPosition(Vector3 position, string sceneName, string checkpointName)
     {
         x = position.x;
         y = position.y;
         z = position.z;
+        this.sceneName = sceneName;
+        this.checkpointName = checkpointName;
     }
 
     public Vector3 ToVector3()
