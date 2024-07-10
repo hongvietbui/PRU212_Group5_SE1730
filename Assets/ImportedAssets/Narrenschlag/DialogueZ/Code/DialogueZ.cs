@@ -1,16 +1,14 @@
 ﻿using System.Collections.Generic;
-using System.Collections;
-using UnityEngine.Events;
 using UnityEngine;
-
-using narrenschlag.extension;
+using UnityEngine.Events;
 
 namespace narrenschlag.dialoguez
-{ 
+{
     public class DialogueZ : MonoBehaviour
     {
         public DialogueZBase db;
         public Event[] events;
+        public UnityEvent onDialogueEnd; // Event to trigger when dialogue ends
 
         #region Dictionaries
         public Dictionary<string, int> ids_idi = new Dictionary<string, int>();
@@ -59,12 +57,6 @@ namespace narrenschlag.dialoguez
 
             s.db = db;
             s.SetupDictionaries();
-        }
-
-        public static DialogueZBase GetDialogueZBase()
-        {
-            DialogueZ s = singleton;
-            return s.db;
         }
 
         public static bool TryGetDialogue_Ids(string ids, out DialogueZElement res)
@@ -116,6 +108,7 @@ namespace narrenschlag.dialoguez
                     res = e;
                     break;
                 }
+
             return res != null;
         }
 
@@ -133,9 +126,7 @@ namespace narrenschlag.dialoguez
         }
         #endregion
 
-        public void Print(string s) {
-            Debug.Log(s); 
-        }
+        public void Print(string s) { Debug.Log(s); }
 
         #region singleton
         public static DialogueZ singleton;
@@ -143,7 +134,18 @@ namespace narrenschlag.dialoguez
         {
             singleton = this;
         }
+
+        private void OnDestroy()
+        {
+            singleton = null;
+        }
         #endregion
+
+        // Call this method when the dialogue ends
+        public void EndDialogue()
+        {
+            onDialogueEnd?.Invoke();
+        }
     }
 
     [System.Serializable]
@@ -156,5 +158,5 @@ namespace narrenschlag.dialoguez
         public bool eie;
 
         public UnityEvent onCast;
-    } 
+    }
 }

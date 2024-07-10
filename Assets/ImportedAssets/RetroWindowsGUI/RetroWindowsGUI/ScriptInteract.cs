@@ -14,22 +14,20 @@ public class ScriptInteract : MonoBehaviour
     public string correctNumber = "15324"; // Correct number sequence for the puzzle
     public GameObject RewardCanvas;     // Reference to the reward canvas
     public Button rewardCancelButton;   // Reference to the cancel button in the reward canvas
-    public GameObject dialogueCanvas;   // Reference to the dialogue UI canvas
 
     private bool canInteractWithStartaftermyPC = false; // Flag to determine if the player can interact with StartaftermyPC
     private bool playerInCollider = false; // Flag to check if the player is within the collider
     private string currentInput = ""; // Current input string
     private TMP_Text inputTextComponent; // Reference to the TMP_Text component
-
+    public InteractableEvent[] onRewardCancel;
     public UnityEvent onPuzzleActivate; // Event for when the puzzle is activated
     public UnityEvent onCorrectPassword; // Event for when the correct password is entered
-    public UnityEvent onRewardCancel; // Event for when the reward canvas is cancelled
 
     void Start()
     {
         InitializeComponents();
     }
-
+  
     void InitializeComponents()
     {
         // Deactivate unnecessary components initially
@@ -49,10 +47,7 @@ public class ScriptInteract : MonoBehaviour
         {
             RewardCanvas.SetActive(false);
         }
-        if (dialogueCanvas != null)
-        {
-            dialogueCanvas.SetActive(false);
-        }
+
 
         // Setup button listeners
         if (cancelButton != null)
@@ -175,27 +170,20 @@ public class ScriptInteract : MonoBehaviour
         // Deactivate the reward canvas
         if (RewardCanvas != null)
         {
-            RewardCanvas.gameObject.SetActive(false);
+            RewardCanvas.SetActive(false);
         }
-        
-   if (puzzleCanvas != null)
+
+        // Deactivate the puzzle canvas if it's still active
+        if (puzzleCanvas != null)
         {
-            puzzleCanvas.gameObject.SetActive(false);
+            puzzleCanvas.SetActive(false);
         }
 
-      
-
-       
+        // Disable interaction with StartaftermyPC
         if (StartaftermyPC != null)
         {
-            StartaftermyPC.gameObject.SetActive(false);
+            StartaftermyPC.SetActive(false);
         }
-        if (dialogueCanvas != null)
-        {
-            dialogueCanvas.gameObject.SetActive(true);
-        }
-        // Disable interaction with StartaftermyPC
-        canInteractWithStartaftermyPC = false;
 
         // Reset the input field
         ResetInput();
@@ -203,7 +191,7 @@ public class ScriptInteract : MonoBehaviour
         // Trigger the reward cancel event if connected
         if (onRewardCancel != null)
         {
-            onRewardCancel.Invoke();
+            TriggerEvents();
         }
 
         // Additional logic as needed when closing the reward canvas
@@ -214,6 +202,16 @@ public class ScriptInteract : MonoBehaviour
     }
 
     // Example method called after cancelling the reward canvas
+    void TriggerEvents()
+    {
+        //invoke every event
+        foreach (InteractableEvent interactableEvent in onRewardCancel)
+        {
+            Debug.Log("Event: " + interactableEvent.eventName);
+            interactableEvent.unityEvent.Invoke();
+        }
+    }
+
     void ExampleMethodOnRewardCancel()
     {
         // Insert your logic here for actions to take after cancelling the reward canvas
@@ -244,7 +242,7 @@ public class ScriptInteract : MonoBehaviour
     {
         if (currentInput == correctNumber)
         {
-            RewardCanvas.gameObject.SetActive(true);
+            RewardCanvas.SetActive(true);
 
             // Trigger the correct password event if connected
             if (onCorrectPassword != null)

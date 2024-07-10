@@ -19,10 +19,12 @@ namespace narrenschlag.dialoguez
         public string dialogueIdFirst;      // ID of the first dialogue to start
         public string dialogueIdLast;       // ID of the last dialogue to end
         public GameObject puzzleCanvas;     // Reference to the puzzle UI canvas
+        public AudioClip interactionSound;  // Sound to play on interaction start and end
 
         private bool playerInRange = false; // Flag to track if player is in range for interaction
         private bool isInteracting = false; // Flag to track if interaction is ongoing
         private string currentDialogueId;   // Tracks the current dialogue ID
+        private AudioSource audioSource;    // Reference to the AudioSource component
 
         void Start()
         {
@@ -44,14 +46,14 @@ namespace narrenschlag.dialoguez
                 puzzleCanvas.SetActive(false);
             }
 
+            // Get the AudioSource component
+            audioSource = GetComponent<AudioSource>();
+
             // Subscribe to the dialogue end event
             if (dialogueManager != null)
             {
                 dialogueManager.onDialogueEnd.AddListener(OnDialogueEnd);
             }
-
-            // Ensure the ScriptInteract object is initially inactive
-         
         }
 
         void Update()
@@ -92,6 +94,12 @@ namespace narrenschlag.dialoguez
         {
             isInteracting = true; // Interaction has started
 
+            // Play interaction sound
+            if (interactionSound != null)
+            {
+                audioSource.PlayOneShot(interactionSound);
+            }
+
             // Show the interact canvas
             interactCanvas.gameObject.SetActive(true);
 
@@ -118,7 +126,6 @@ namespace narrenschlag.dialoguez
                 if (collider != null)
                 {
                     collider.enabled = false;
-
                 }
             }
 
@@ -165,7 +172,8 @@ namespace narrenschlag.dialoguez
                 }
 
                 // Activate the ScriptInteract object
-             
+                DialogueCanvasManager dialogueCanvasManager = dialogueManager.GetComponent<DialogueCanvasManager>();
+                dialogueCanvasManager.hideDialogue();
             }
             else
             {
