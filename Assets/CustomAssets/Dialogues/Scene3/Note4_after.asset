@@ -10,26 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
-  m_Name: StatueSecondTime
+  m_Name: Note4_after
   m_EditorClassIdentifier: 
   elements:
   - ids: dialogue_1
     idi: 1
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Narrator
-    message: The statue no longer holds the same mystery as before. It feels like
-      an old friend, always there to listen.
-    audio: {fileID: 0}
+    title: Main Character
+    message: 'I... am... not alone??? '
+    audio: {fileID: 8300000, guid: ed7d5936a8af51640bd4c39e5240bbc6, type: 3}
     follows: []
     auto_next_idi: 2
   - ids: dialogue_2
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: MainCharacter
-    message: Now, I feel this statue is like a friend. It helped me realize so many
-      valuable things.
+    title: Main Character
+    message: After all
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 3
@@ -37,8 +35,8 @@ MonoBehaviour:
     idi: 3
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: MainCharacter
-    message: Thank you, even though you're just a statue.//quit
+    title: Narrator
+    message: There will be a person that will help me not alone ?
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 4
@@ -47,8 +45,17 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Narrator
+    message: Thanks for this preparation!
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 5
+  - ids: dialogue_5
+    idi: 5
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Narrator
     message: //call,hide_dialogue
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 3
+    auto_next_idi: 4
   auto_save: 0
