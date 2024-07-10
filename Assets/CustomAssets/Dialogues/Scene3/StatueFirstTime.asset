@@ -18,8 +18,8 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Narrator
-    message: The Thinker is a bronze sculpture by Auguste Rodin, situated atop a
-      stone pedestal.
+    message: The statue stands silently in the school yard, bearing an aura of mystery
+      and majesty. It seems to have witnessed the passage of time."
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
@@ -27,17 +27,9 @@ MonoBehaviour:
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Narrator
-    message: The work depicts a nude male figure of heroic size sitting on a rock.
-    audio: {fileID: 0}
-    follows: []
-    auto_next_idi: 3
-  - ids: dialogue_3
-    idi: 3
-    color_type: {r: 0, g: 1, b: 0, a: 1}
-    eie: 1
-    title: MainCR
-    message: Wow this is amazing//quit
+    title: MainCharacter
+    message: I feel there's something unusual about this statue... It's as if it
+      wants to tell me something.//quit
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
