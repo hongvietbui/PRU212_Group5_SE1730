@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
-  m_Name: PhotoDialogue
+  m_Name: PhotoDialogueAfter
   m_EditorClassIdentifier: 
   elements:
   - ids: dialogue_1
@@ -18,7 +18,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Character
-    message: Is that the class Photo!
+    message: I have had beautiful memories in this class before!
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
@@ -26,8 +26,8 @@ MonoBehaviour:
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Character
-    message: Why do I feel both familiar and strange ?
+    title: Narrator
+    message: What happened to me bruh !
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 3
@@ -36,7 +36,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Character
-    message: Why do I feel like the photo is fading ?
+    message: Where are all my friends !!!
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 4
@@ -45,8 +45,8 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Character
-    message: //call,event_1
+    message: Oh i get it, i have to learn how to sacrifice to achieve our goals
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 3
+    auto_next_idi: 4
   auto_save: 0

@@ -1,35 +1,53 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PhotoInteraction : MonoBehaviour
 {
-	private bool isPlayerNear = false;
+    public KeyCode interactKey = KeyCode.E;
+    public InteractableEvent[] interactableEvents;
 
-	void Update()
-	{
-		if (isPlayerNear && Input.GetKeyDown(KeyCode.E))
-		{
-			SceneManager.LoadScene("Scene5_ExitClassRoom"); // Thay th? b?ng t�n c?nh b?n mu?n t?i
-		}
-	}
+    private bool isPlayerInRange = false;
 
-	private void OnTriggerEnter2D(Collider2D other)
-	{
-		if (other.CompareTag("Player"))
-		{
-			isPlayerNear = true;
-			// Tu? ch?n, hi?n th? l?i nh?c UI cho ng??i ch?i
-			Debug.Log("Nh?n E ?? t??ng t�c v?i ?nh");
-		}
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        if (isPlayerInRange && Input.GetKeyDown(interactKey))
+        {
+            if (!PuzzleState.isPuzzleSolved)
+            {
+                PuzzleState.savedPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
+                TriggerEvents();
+            }
+            else
+            {
+                Debug.Log("Puzzle đã được hoàn thành.");
+            }
+        }
+    }
 
-	private void OnTriggerExit2D(Collider2D other)
-	{
-		if (other.CompareTag("Player"))
-		{
-			isPlayerNear = false;
-			// Tu? ch?n, ?n l?i nh?c UI
-			Debug.Log("R?i kh?i khu v?c t??ng t�c v?i ?nh");
-		}
-	}
+    void TriggerEvents()
+    {
+        // Invoke every event
+        foreach (InteractableEvent interactableEvent in interactableEvents)
+        {
+            Debug.Log("Event: " + interactableEvent.eventName);
+            interactableEvent.unityEvent.Invoke();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerInRange = false;
+        }
+    }
 }
