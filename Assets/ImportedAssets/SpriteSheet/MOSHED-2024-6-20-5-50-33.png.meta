@@ -1,0 +1,1962 @@
+fileFormatVersion: 2
+guid: 2e1d9b45382377b4f89e3efeff7ab0a5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3960
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2c1a6a664202049b65b55711e7f563
+      internalID: -1718918789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_1
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 3960
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15219f54ae1757c45a23a474abbb7c4d
+      internalID: 179986668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_2
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3960
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b416ee565ac54746ab7ceedb1aceef3
+      internalID: 826932084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_3
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 3960
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531e0efdf0712524b9c795bea7851fba
+      internalID: -964071069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_4
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 3960
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691c704173d253548a74e5bc268ae174
+      internalID: -2050203013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_5
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3960
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94bf04a3085b41449e77a9ce0fd3773
+      internalID: 998213078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_6
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 3960
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26fb49c9f726cb47b722c034a33ef77
+      internalID: 41109932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0faee722b5caa544bb47a52f840cd95
+      internalID: -126422661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_8
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 3600
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d34e3899cbb6b43bc83ec99bdb055f
+      internalID: 1388477028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_9
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3600
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ccd6368dbc2c44bafe2e9a6986367a
+      internalID: -1712587739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_10
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 3600
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b637e2379d800e0499320d2e60a723dc
+      internalID: -461522307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_11
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 3600
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb90c90fa6a70541b96da6575cb9468
+      internalID: 842035648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_12
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3600
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a7aafd50136ae4a9b03236f8e03197
+      internalID: 1077886558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_13
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 3600
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7030b74e112a042b2eec1fa1dbcd76
+      internalID: 2088688711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3846976dd9f82314f90b49c330eecec1
+      internalID: -552468086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_15
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 3240
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08081125b175b824b90a6e47125652cb
+      internalID: 1326308821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_16
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3240
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fed77bb724ee0a4bac719475d930bc7
+      internalID: 1430424323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_17
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 3240
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da6cad15b9e39b4981bf487272ffdb1
+      internalID: -472545531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_18
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 3240
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb590529f6997c3429955d3780b83a77
+      internalID: -442131431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_19
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3240
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5058ecd747ece4dad383f954ba220a
+      internalID: 1028023240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_20
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 3240
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99945a03314f7d468c18998fc97bf3a
+      internalID: -1714355781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfd00817c4c2504ba29a7a9b0a31103
+      internalID: 622336398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_22
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 2880
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6915b9f6febbdb469e4f5180756e683
+      internalID: -1943159061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_23
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2880
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4725ad26bea3c741b4020d5c9d45819
+      internalID: -724666088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_24
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 2880
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317642af24a4eec49b0caced35d98e8a
+      internalID: -982088773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_25
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2880
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607b883572e070b42befd6b320412a32
+      internalID: 457209273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_26
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2880
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01dbd024a208597418ef7dbd2cd3404a
+      internalID: 1402603733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_27
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 2880
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc603cf3aedb91b4bb0e4e83a232d455
+      internalID: 983943996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2520
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986647025af1d954cbbcc03916a0262a
+      internalID: -189890979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_29
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 2520
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4b7639f4c8557489b651779541cce5
+      internalID: -900925714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_30
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2520
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb00fa2194954047889349ade3adb98
+      internalID: 1265157195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_31
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 2520
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad845fc8da78c844a4818c44f30b3e1
+      internalID: 782223603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_32
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2520
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4130fb4559cf2dd499bb529aac68a303
+      internalID: -950814530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_33
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2520
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcef5a99171611b48913f9c6a1ec073e
+      internalID: 1459084218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_34
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 2520
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c7d2e3b32d18443a20b5c5c6902e20
+      internalID: 1864143813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254a1395be1b4b449a4747d862f1a278
+      internalID: 703390130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_36
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 2160
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7062effb08912744eaa0665237b0f0f3
+      internalID: -493565682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_37
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2160
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7f831e3b9ba8d4ca96ee17940b9d21
+      internalID: 1178007605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_38
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 2160
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504372dc8bb2bc247aac37ee227e414c
+      internalID: 764225336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_39
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 2160
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ccc3b58cc7babb4eb4f9ef6f8d61584
+      internalID: -42856139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_40
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2160
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ad9c7247b31344ba437795ec010dd2
+      internalID: -488054547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_41
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 2160
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f77b97abb46f464d87a4e2e73bb50e1
+      internalID: -1432050571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcbe949f1590d54bbcd36f6e04f5175
+      internalID: 1931779794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_43
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1800
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62926a2a69ee9749aa90418dc72de6d
+      internalID: -180315130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_44
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1800
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68248a09d94d34448b1373f32dee6ba8
+      internalID: 805843345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_45
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1800
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f310d7d0ceabe54458f1d59d80dd027a
+      internalID: 2114367190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_46
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1800
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8883e563ea6d746907fd579868869e
+      internalID: -578569188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_47
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1800
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4de0f35df1f31344ad8094ad79e6f83
+      internalID: -1738256469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_48
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 1800
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf00cb38cb4ec64da5cf9bc96fdddf3
+      internalID: 794941849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61486b145c688e448ae5318ab1457db4
+      internalID: 539343440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_50
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1440
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fbb11b260f5bd429c8e8adc9f2d6f8
+      internalID: -1653840482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_51
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1440
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b56b322e6c4e15438628b689705fd87
+      internalID: -1587016224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_52
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1440
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53111594fe250f42a11d12abe6d25f7
+      internalID: 1108276206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_53
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1440
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447442211cc18cd489774eac3514b021
+      internalID: 898530246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_54
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1440
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03198afe4dc739542b3f135c19186ce6
+      internalID: -1234568385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_55
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 1440
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496627f2cdb0b65459b08979147e620d
+      internalID: 521263560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bde05ce42cb470409fab9ab866f2c77
+      internalID: -861411713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_57
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1080
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ca50e142da6ca43849e038d39fb264
+      internalID: -846314428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_58
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1080
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4842878258d974246a431fb4714ede4d
+      internalID: -264832760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_59
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1080
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58b3acb37a68714ea45bc2d4bf97558
+      internalID: -1190432403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_60
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1080
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccea6f100c89d1c4c82f35f37d8d0fd4
+      internalID: -461113033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_61
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1080
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0e3cbdaafc5e344aab0f8f3bb49c89
+      internalID: -1119111194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_62
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 1080
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b085671b9102d8a41b775249406ebad8
+      internalID: -880826009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc60eda5e5374440b0c1af90d984450
+      internalID: 2113614552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_64
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 720
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a0aabfde3acda4595fd1d163e60ee5
+      internalID: -1937395119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_65
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 720
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4255cff9a491a8d4db93be21195ccc8a
+      internalID: -1099311762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_66
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 720
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26425747c19b1e248bd39d76101d29d1
+      internalID: -2120226785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_67
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 720
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a590d11ed72da841b44d3eca049545b
+      internalID: -1909203986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_68
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 720
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772e290dc31750946aa5f8cecdb63b76
+      internalID: 720915157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_69
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 720
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716c10c017aba094ca401c0a2b6e15e6
+      internalID: 2018681108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2019719d2a309d4cb1e5a499640936b
+      internalID: 1127888590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_71
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 360
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e8f4ccac254164ba27e94cbe478e2e
+      internalID: 1223032163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_72
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 360
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6ebd239c0ce204db502c02295ff03f
+      internalID: 720326809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_73
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 360
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01472de77c22a24dba3a893b8f3671b
+      internalID: 2121669226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_74
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 360
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007c6aaf615c35f4d865adc8ca698698
+      internalID: -1027399845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_75
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 360
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d8e813a0c44154a9de116cb81389ed
+      internalID: -1029856869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_76
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 360
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e72e9000dc43549bafc22833991d32
+      internalID: -1934545484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd793a5492bd5bf47829ca1453721764
+      internalID: -1516117756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_78
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f801956876b5a40b61909706800406
+      internalID: -816808244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_79
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3c9ce27b963804e88a8f01042e0bb1
+      internalID: 140656688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_80
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68970755b72eb2f479d40fa752853a7d
+      internalID: -1958075957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_81
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffecf02b0e249340a86afd3af5cd6a2
+      internalID: -224050738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_82
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 0
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d9fa96b5baff74698466c62e3bdfd7
+      internalID: -1116018330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MOSHED-2024-6-20-5-50-33_83
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 0
+        width: 630
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be060bc2ec2e82243a1839b6d84f2a97
+      internalID: -760807621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MOSHED-2024-6-20-5-50-33_0: -1718918789
+      MOSHED-2024-6-20-5-50-33_1: 179986668
+      MOSHED-2024-6-20-5-50-33_10: -461522307
+      MOSHED-2024-6-20-5-50-33_11: 842035648
+      MOSHED-2024-6-20-5-50-33_12: 1077886558
+      MOSHED-2024-6-20-5-50-33_13: 2088688711
+      MOSHED-2024-6-20-5-50-33_14: -552468086
+      MOSHED-2024-6-20-5-50-33_15: 1326308821
+      MOSHED-2024-6-20-5-50-33_16: 1430424323
+      MOSHED-2024-6-20-5-50-33_17: -472545531
+      MOSHED-2024-6-20-5-50-33_18: -442131431
+      MOSHED-2024-6-20-5-50-33_19: 1028023240
+      MOSHED-2024-6-20-5-50-33_2: 826932084
+      MOSHED-2024-6-20-5-50-33_20: -1714355781
+      MOSHED-2024-6-20-5-50-33_21: 622336398
+      MOSHED-2024-6-20-5-50-33_22: -1943159061
+      MOSHED-2024-6-20-5-50-33_23: -724666088
+      MOSHED-2024-6-20-5-50-33_24: -982088773
+      MOSHED-2024-6-20-5-50-33_25: 457209273
+      MOSHED-2024-6-20-5-50-33_26: 1402603733
+      MOSHED-2024-6-20-5-50-33_27: 983943996
+      MOSHED-2024-6-20-5-50-33_28: -189890979
+      MOSHED-2024-6-20-5-50-33_29: -900925714
+      MOSHED-2024-6-20-5-50-33_3: -964071069
+      MOSHED-2024-6-20-5-50-33_30: 1265157195
+      MOSHED-2024-6-20-5-50-33_31: 782223603
+      MOSHED-2024-6-20-5-50-33_32: -950814530
+      MOSHED-2024-6-20-5-50-33_33: 1459084218
+      MOSHED-2024-6-20-5-50-33_34: 1864143813
+      MOSHED-2024-6-20-5-50-33_35: 703390130
+      MOSHED-2024-6-20-5-50-33_36: -493565682
+      MOSHED-2024-6-20-5-50-33_37: 1178007605
+      MOSHED-2024-6-20-5-50-33_38: 764225336
+      MOSHED-2024-6-20-5-50-33_39: -42856139
+      MOSHED-2024-6-20-5-50-33_4: -2050203013
+      MOSHED-2024-6-20-5-50-33_40: -488054547
+      MOSHED-2024-6-20-5-50-33_41: -1432050571
+      MOSHED-2024-6-20-5-50-33_42: 1931779794
+      MOSHED-2024-6-20-5-50-33_43: -180315130
+      MOSHED-2024-6-20-5-50-33_44: 805843345
+      MOSHED-2024-6-20-5-50-33_45: 2114367190
+      MOSHED-2024-6-20-5-50-33_46: -578569188
+      MOSHED-2024-6-20-5-50-33_47: -1738256469
+      MOSHED-2024-6-20-5-50-33_48: 794941849
+      MOSHED-2024-6-20-5-50-33_49: 539343440
+      MOSHED-2024-6-20-5-50-33_5: 998213078
+      MOSHED-2024-6-20-5-50-33_50: -1653840482
+      MOSHED-2024-6-20-5-50-33_51: -1587016224
+      MOSHED-2024-6-20-5-50-33_52: 1108276206
+      MOSHED-2024-6-20-5-50-33_53: 898530246
+      MOSHED-2024-6-20-5-50-33_54: -1234568385
+      MOSHED-2024-6-20-5-50-33_55: 521263560
+      MOSHED-2024-6-20-5-50-33_56: -861411713
+      MOSHED-2024-6-20-5-50-33_57: -846314428
+      MOSHED-2024-6-20-5-50-33_58: -264832760
+      MOSHED-2024-6-20-5-50-33_59: -1190432403
+      MOSHED-2024-6-20-5-50-33_6: 41109932
+      MOSHED-2024-6-20-5-50-33_60: -461113033
+      MOSHED-2024-6-20-5-50-33_61: -1119111194
+      MOSHED-2024-6-20-5-50-33_62: -880826009
+      MOSHED-2024-6-20-5-50-33_63: 2113614552
+      MOSHED-2024-6-20-5-50-33_64: -1937395119
+      MOSHED-2024-6-20-5-50-33_65: -1099311762
+      MOSHED-2024-6-20-5-50-33_66: -2120226785
+      MOSHED-2024-6-20-5-50-33_67: -1909203986
+      MOSHED-2024-6-20-5-50-33_68: 720915157
+      MOSHED-2024-6-20-5-50-33_69: 2018681108
+      MOSHED-2024-6-20-5-50-33_7: -126422661
+      MOSHED-2024-6-20-5-50-33_70: 1127888590
+      MOSHED-2024-6-20-5-50-33_71: 1223032163
+      MOSHED-2024-6-20-5-50-33_72: 720326809
+      MOSHED-2024-6-20-5-50-33_73: 2121669226
+      MOSHED-2024-6-20-5-50-33_74: -1027399845
+      MOSHED-2024-6-20-5-50-33_75: -1029856869
+      MOSHED-2024-6-20-5-50-33_76: -1934545484
+      MOSHED-2024-6-20-5-50-33_77: -1516117756
+      MOSHED-2024-6-20-5-50-33_78: -816808244
+      MOSHED-2024-6-20-5-50-33_79: 140656688
+      MOSHED-2024-6-20-5-50-33_8: 1388477028
+      MOSHED-2024-6-20-5-50-33_80: -1958075957
+      MOSHED-2024-6-20-5-50-33_81: -224050738
+      MOSHED-2024-6-20-5-50-33_82: -1116018330
+      MOSHED-2024-6-20-5-50-33_83: -760807621
+      MOSHED-2024-6-20-5-50-33_9: -1712587739
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
