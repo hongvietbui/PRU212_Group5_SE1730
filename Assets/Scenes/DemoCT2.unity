@@ -5775,7 +5775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 17753195}
-  questionPanel: {fileID: 0}
+  questionPanel: {fileID: 828093657}
 --- !u!1 &701270123
 GameObject:
   m_ObjectHideFlags: 0
@@ -7329,7 +7329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1217557592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8225,6 +8225,7 @@ MonoBehaviour:
   - {fileID: 1022227185}
   - {fileID: 2063497750}
   resultText: {fileID: 1581846275}
+  quizBackground: {fileID: 0}
   questionPanel: {fileID: 828093657}
   result: {fileID: 2046170552}
   closeButton: {fileID: 568392702}
@@ -8751,7 +8752,7 @@ SceneRoots:
   - {fileID: 677803112}
   - {fileID: 948940274}
   - {fileID: 2106950638}
-  - {fileID: 1786361824}
   - {fileID: 382838070}
+  - {fileID: 1786361824}
   - {fileID: 615978920}
   - {fileID: 1217557594}
