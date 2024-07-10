@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -70,4 +71,6 @@ public class GameManager : Singleton<GameManager>
             keyMappings[key] = (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString(key));
         }
     }
+
+   
 }

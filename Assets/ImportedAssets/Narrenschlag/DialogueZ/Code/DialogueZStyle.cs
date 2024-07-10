@@ -32,8 +32,8 @@ namespace narrenschlag.dialoguez
             // Error Log if no singleton
             if (!d) Debug.LogError("No DialogueZ Manager found!");
 
-            //// Set PlayerPref playername to "Max"
-            //PlayerPrefs.SetString("playername", "Max");
+            // Set PlayerPref playername to "Max"
+            PlayerPrefs.SetString("playername", "Max");
 
             // Return if no DialogueZ Manager
             if (!d) return;
@@ -326,7 +326,7 @@ namespace narrenschlag.dialoguez
                     break;
             }
 
-            //Debug.Log("Command: " + arguments + " -> " + c.result);
+            // Debug.Log("Command: " + arguments + " -> " + c.result);
             return c;
         }
 
@@ -341,8 +341,7 @@ namespace narrenschlag.dialoguez
                 Event e;
                 // if (int.TryParse(arg, out i))
                 if (DialogueZ.TryGetEvent(arg, out e))
-                    if (e.onCast != null)
-                        e.onCast.Invoke();
+                    if (e.onCast != null) e.onCast.Invoke();
             }
         }
 
