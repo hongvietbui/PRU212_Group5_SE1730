@@ -48,5 +48,14 @@ MonoBehaviour:
     message: Oh i get it, i have to learn how to sacrifice to achieve our goals
     audio: {fileID: 0}
     follows: []
+    auto_next_idi: 5
+  - ids: dialogue_5
+    idi: 5
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Narrator
+    message: //quit
+    audio: {fileID: 0}
+    follows: []
     auto_next_idi: 4
   auto_save: 0

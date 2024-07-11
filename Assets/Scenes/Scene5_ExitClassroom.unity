@@ -213,7 +213,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -983,10 +983,10 @@ MonoBehaviour:
   - {fileID: 538468982}
   - {fileID: 1581224905}
   - {fileID: 232879451}
-  resultText: {fileID: 0}
+  resultText: {fileID: 1550960}
   quizBackground: {fileID: 1042147174}
   questionPanel: {fileID: 479433131}
-  result: {fileID: 1550958}
+  result: {fileID: 800599603}
   closeButton: {fileID: 1888795799}
   itemData: {fileID: 11400000, guid: 3b9a1bdf9f248dc4eb371630b156166b, type: 2}
 --- !u!212 &123391141
@@ -1100,7 +1100,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.29693985, y: -2.2208464}
+  m_Offset: {x: -0.5906029, y: -3.5969064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1111,7 +1111,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.186167, y: 10.514378}
+  m_Size: {x: 8.184269, y: 7.762257}
   m_EdgeRadius: 0
 --- !u!4 &123391144
 Transform:
@@ -1508,7 +1508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!58 &489532226
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2143,6 +2143,10 @@ PrefabInstance:
     - target: {fileID: 4563334600087293377, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
       propertyPath: m_ClearFlags
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563334600087293377, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
+      propertyPath: orthographic size
+      value: 6.796832
       objectReference: {fileID: 0}
     - target: {fileID: 4563334600087293377, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -3968,7 +3972,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 123391140}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
         m_MethodName: CloseResultText
         m_Mode: 1
@@ -4409,8 +4413,8 @@ SceneRoots:
   - {fileID: 1406604147}
   - {fileID: 2063654619}
   - {fileID: 1447575585}
-  - {fileID: 489532229}
   - {fileID: 71123654}
+  - {fileID: 489532229}
   - {fileID: 123391144}
   - {fileID: 729797660}
   - {fileID: 567990850}
