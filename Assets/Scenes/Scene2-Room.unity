@@ -648,7 +648,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.603264, y: 0.9286157}
   m_EdgeRadius: 0
-<<<<<<< HEAD
 --- !u!1 &131724595
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,145 +856,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171732139}
   m_CullTransparentMesh: 1
-=======
---- !u!1001 &101266021
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 292403768}
-    m_Modifications:
-    - target: {fileID: 2940647438259474389, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5813799637224606265, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6236956588818831505, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: debug_start
-      value: dialogue_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7434002590082709691, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7434002590082709691, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7465836052019035886, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7465836052019035886, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7465836052019035886, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7465836052019035886, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8110356478045138045, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Name
-      value: Dialogue_Dan (Fantasy)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8561059673303668319, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
->>>>>>> Sprint03_puzzleBookShelf
 --- !u!1 &202172170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,55 +989,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202172170}
   m_CullTransparentMesh: 1
---- !u!1 &253158695 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1671531360344596432, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
-  m_PrefabInstance: {fileID: 2030135684}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &253158700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253158695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &255365183
 GameObject:
   m_ObjectHideFlags: 3
@@ -1369,11 +1180,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
-<<<<<<< HEAD
 --- !u!1 &287977419
-=======
---- !u!1 &292403764
->>>>>>> Sprint03_puzzleBookShelf
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1381,7 +1188,6 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 287977420}
   - component: {fileID: 287977422}
   - component: {fileID: 287977421}
@@ -1724,34 +1530,18 @@ GameObject:
   - component: {fileID: 345289506}
   m_Layer: 5
   m_Name: NoteCanvas2
-=======
-  - component: {fileID: 292403768}
-  - component: {fileID: 292403767}
-  - component: {fileID: 292403766}
-  - component: {fileID: 292403765}
-  m_Layer: 5
-  m_Name: DialogueCanvas
->>>>>>> Sprint03_puzzleBookShelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
-<<<<<<< HEAD
 --- !u!114 &345289506
-=======
---- !u!114 &292403765
->>>>>>> Sprint03_puzzleBookShelf
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 345289505}
-=======
-  m_GameObject: {fileID: 292403764}
->>>>>>> Sprint03_puzzleBookShelf
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
@@ -1762,21 +1552,13 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-<<<<<<< HEAD
 --- !u!114 &345289507
-=======
---- !u!114 &292403766
->>>>>>> Sprint03_puzzleBookShelf
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 345289505}
-=======
-  m_GameObject: {fileID: 292403764}
->>>>>>> Sprint03_puzzleBookShelf
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
@@ -1793,21 +1575,13 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
-<<<<<<< HEAD
 --- !u!223 &345289508
-=======
---- !u!223 &292403767
->>>>>>> Sprint03_puzzleBookShelf
 Canvas:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 345289505}
-=======
-  m_GameObject: {fileID: 292403764}
->>>>>>> Sprint03_puzzleBookShelf
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
@@ -1818,53 +1592,33 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-<<<<<<< HEAD
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
-=======
-  m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 0
->>>>>>> Sprint03_puzzleBookShelf
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-<<<<<<< HEAD
 --- !u!224 &345289509
-=======
---- !u!224 &292403768
->>>>>>> Sprint03_puzzleBookShelf
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 345289505}
-=======
-  m_GameObject: {fileID: 292403764}
->>>>>>> Sprint03_puzzleBookShelf
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-<<<<<<< HEAD
   - {fileID: 1914223096}
   - {fileID: 1413110327}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.296}
-=======
-  - {fileID: 1285275411}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Sprint03_puzzleBookShelf
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
-<<<<<<< HEAD
 --- !u!1 &360874232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,8 +1681,6 @@ MonoBehaviour:
   message: {fileID: 468436113}
   next_quit: 0
   done_typing: 0
-=======
->>>>>>> Sprint03_puzzleBookShelf
 --- !u!1 &391234202
 GameObject:
   m_ObjectHideFlags: 0
@@ -9418,11 +9170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Scene03
-<<<<<<< HEAD
 --- !u!1 &774233932
-=======
---- !u!1 &777350176
->>>>>>> Sprint03_puzzleBookShelf
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9430,40 +9178,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 774233933}
   - component: {fileID: 774233935}
   - component: {fileID: 774233934}
   m_Layer: 5
   m_Name: Panel
-=======
-  - component: {fileID: 777350178}
-  - component: {fileID: 777350177}
-  - component: {fileID: 777350179}
-  - component: {fileID: 777350180}
-  - component: {fileID: 777350182}
-  - component: {fileID: 777350181}
-  - component: {fileID: 777350183}
-  m_Layer: 0
-  m_Name: BookShelf
->>>>>>> Sprint03_puzzleBookShelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!224 &774233933
 RectTransform:
-=======
---- !u!212 &777350177
-SpriteRenderer:
->>>>>>> Sprint03_puzzleBookShelf
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 774233932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -9584,61 +9314,10 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &776880003
 CanvasRenderer:
-=======
-  m_GameObject: {fileID: 777350176}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 887458025
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eac25a833c5073d428796cb3db19ef6a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4, y: 4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &777350178
-Transform:
->>>>>>> Sprint03_puzzleBookShelf
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 776880000}
   m_CullTransparentMesh: 1
 --- !u!1 &800073722
@@ -9679,96 +9358,11 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800073724
-=======
-  m_GameObject: {fileID: 777350176}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.08, y: -2.89, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &777350179
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777350176}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.043722153, y: -0.8088553}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
-    newSize: {x: 4, y: 4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.6008987, y: 0.98318815}
-  m_EdgeRadius: 0
---- !u!50 &777350180
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777350176}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &777350181
->>>>>>> Sprint03_puzzleBookShelf
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 800073722}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -9795,102 +9389,12 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &800073725
 CanvasRenderer:
-=======
-  m_GameObject: {fileID: 777350176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a16661c6a7a514e41b1cc761ce4d0c70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newMaterial: {fileID: -876546973899608171, guid: d8656a0fec1096b4aa172073ca8c5a13, type: 3}
---- !u!58 &777350182
-CircleCollider2D:
->>>>>>> Sprint03_puzzleBookShelf
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 800073722}
   m_CullTransparentMesh: 0
-=======
-  m_GameObject: {fileID: 777350176}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.13584042, y: 0}
-  serializedVersion: 2
-  m_Radius: 5.2149115
---- !u!114 &777350183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777350176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f251fac7f55a6b458d97504119f40d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactKey: 101
-  interactableEvents:
-  - eventName: Change Dialogue Data
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1885569169}
-          m_TargetAssemblyTypeName: narrenschlag.dialoguez.DialogueZ, Assembly-CSharp
-          m_MethodName: SetDatabase
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 992a8e1f70c91a441b0ca9b23009bd4d, type: 2}
-            m_ObjectArgumentAssemblyTypeName: narrenschlag.dialoguez.DialogueZBase,
-              Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventName: Change Dialogue Data
-    unityEvent:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 292403764}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
->>>>>>> Sprint03_puzzleBookShelf
 --- !u!1 &809667448
 GameObject:
   m_ObjectHideFlags: 0
@@ -19871,7 +19375,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
-<<<<<<< HEAD
 --- !u!114 &1242065336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20431,13 +19934,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301263457}
   m_CullTransparentMesh: 0
-=======
---- !u!224 &1285275411 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4320198151310710269, guid: 6b825d26ccd075f498f72e7d3bfacb2b, type: 3}
-  m_PrefabInstance: {fileID: 101266021}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> Sprint03_puzzleBookShelf
 --- !u!1 &1326939177
 GameObject:
   m_ObjectHideFlags: 0
@@ -21843,19 +21339,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4222596860750802284, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_Size.x
-      value: 0.17430508
+      value: 0.3045485
       objectReference: {fileID: 0}
     - target: {fileID: 4222596860750802284, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_Size.y
-      value: 0.064130455
+      value: 0.29616988
       objectReference: {fileID: 0}
     - target: {fileID: 4222596860750802284, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_Offset.x
-      value: 0.010230809
+      value: 0.024294019
       objectReference: {fileID: 0}
     - target: {fileID: 4222596860750802284, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_Offset.y
-      value: -0.31281513
+      value: -0.21124595
       objectReference: {fileID: 0}
     - target: {fileID: 4222596860750802284, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_IsTrigger
@@ -21908,10 +21404,6 @@ PrefabInstance:
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7038598141489268414, guid: 786d6c96388563a418e38924dbc48007, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8748526663027915152, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_SortingLayer
@@ -22081,7 +21573,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1490357522
 GameObject:
   m_ObjectHideFlags: 0
@@ -22309,81 +21800,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
---- !u!1001 &1480503622
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4059650706708931090, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_Name
-      value: Dialogue Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4059650706708931116, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4059650706708931091, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4059650706708931090, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1885569169}
-  m_SourcePrefab: {fileID: 100100000, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
->>>>>>> Sprint03_puzzleBookShelf
 --- !u!1 &1507194006
 GameObject:
   m_ObjectHideFlags: 0
@@ -22395,7 +21811,6 @@ GameObject:
   - component: {fileID: 1507194009}
   - component: {fileID: 1507194008}
   - component: {fileID: 1507194010}
-  - component: {fileID: 1507194011}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -22463,11 +21878,7 @@ Transform:
   m_GameObject: {fileID: 1507194006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
   m_LocalPosition: {x: 2.86, y: -1.25, z: -10}
-=======
-  m_LocalPosition: {x: 3.27, y: -1.62, z: -10}
->>>>>>> Sprint03_puzzleBookShelf
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22508,50 +21919,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1507194011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507194006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1511340562
 GameObject:
   m_ObjectHideFlags: 0
@@ -22697,7 +22064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf974a49709a7442a8a44976985f52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   interactCanvas: {fileID: 606735476}
   interactText: {fileID: 590213881}
   animationImage: {fileID: 753971353}
@@ -23477,8 +22843,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638979868}
   m_CullTransparentMesh: 1
-=======
->>>>>>> Sprint03_puzzleBookShelf
 --- !u!1 &1639177492
 GameObject:
   m_ObjectHideFlags: 0
@@ -26937,7 +26301,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841348503}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 --- !u!224 &1856382170 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4320198151310710269, guid: 4e3b41fe60d42654abace1fcabb63176, type: 3}
@@ -26981,20 +26344,11 @@ RectTransform:
   m_SizeDelta: {x: 186.3256, y: 134.8094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1860798553
-=======
---- !u!1 &1885569168 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4059650706708931090, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
-  m_PrefabInstance: {fileID: 1480503622}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1885569169
->>>>>>> Sprint03_puzzleBookShelf
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 1860798551}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -27546,16 +26900,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
-=======
-  m_GameObject: {fileID: 1885569168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c9b08d5632727b4189703dbba102d66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  db: {fileID: 11400000, guid: 66ac15d58edf39644a8afca4ac464ea2, type: 2}
-  events: []
->>>>>>> Sprint03_puzzleBookShelf
 --- !u!1 &1950970553
 GameObject:
   m_ObjectHideFlags: 0
@@ -27835,11 +27179,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 158371416040141330, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.64
+      value: 27.8
       objectReference: {fileID: 0}
     - target: {fileID: 158371416040141330, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.63
+      value: -11.4
       objectReference: {fileID: 0}
     - target: {fileID: 158371416040141330, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27884,10 +27228,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1671531360344596432, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 253158700}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
 --- !u!1 &2108602272
 GameObject:
@@ -28177,7 +27518,6 @@ SceneRoots:
   - {fileID: 39163710}
   - {fileID: 1504232877}
   - {fileID: 260477914}
-<<<<<<< HEAD
   - {fileID: 345289509}
   - {fileID: 816493890}
   - {fileID: 606735477}
@@ -28188,8 +27528,3 @@ SceneRoots:
   - {fileID: 1242862025}
   - {fileID: 977528956}
   - {fileID: 1679980086}
-=======
-  - {fileID: 777350178}
-  - {fileID: 292403768}
-  - {fileID: 1480503622}
->>>>>>> Sprint03_puzzleBookShelf
