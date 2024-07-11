@@ -6,16 +6,16 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    public static InventoryManager instance;//MARKER SINGLETON PATTERN
+    public static InventoryManager instance;
     public bool isPaused;
 
     public List<Item> items;
     public GameObject[] slots;
 
-    //public Dictionary<Item, int> itemDict = new Dictionary<Item, int>();//OPTIONAL
+  
 
-    public ItemButton thisButton;//Keep Track of which Item Button We are mouse Hovering
-    public ItemButton[] itemButtons;//ALL of ITEM BUTTONS in this game [Used for reset]
+    public ItemButton thisButton;
+    public ItemButton[] itemButtons;
 
 
     private void Awake()

@@ -2,6 +2,7 @@
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
+        SceneManager.LoadScene("Inventory");
         quizBackground.SetActive(false);
         questionPanel.SetActive(false);
         result.SetActive(false);
