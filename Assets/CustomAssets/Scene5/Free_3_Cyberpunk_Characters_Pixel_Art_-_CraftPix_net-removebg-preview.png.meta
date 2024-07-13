@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bf29b5eccfe7db34ca243196927248af
+guid: f69d7bf8161d9b340a77d5acee7c7e78
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Free_3_Cyberpunk_Characters_Pixel_Art_-_CraftPix_net-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 204
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a615c655f12876c44b6dc78d0ab2e84c
+      internalID: 1321247913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_3_Cyberpunk_Characters_Pixel_Art_-_CraftPix_net-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 204
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fc9e01597e01d4b998e4de30337428
+      internalID: 1789600951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +148,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Free_3_Cyberpunk_Characters_Pixel_Art_-_CraftPix_net-removebg-preview_0: 1321247913
+      Free_3_Cyberpunk_Characters_Pixel_Art_-_CraftPix_net-removebg-preview_1: 1789600951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

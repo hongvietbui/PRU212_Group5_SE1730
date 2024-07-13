@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c7195aa37db29e841ab3d6ff80c29231
+guid: ab1a85e18a6e82746a9bb72ecfce38e8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: hallway (2) (1) 1-export_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 242
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11471b9d87e5f445889966aa5b156e5
+      internalID: 1910814482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hallway (2) (1) 1-export_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 592
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe66e9be4460834d81b48ace03a1ca8
+      internalID: -1804505632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hallway (2) (1) 1-export_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 592
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ff33cf66f475d43a34dc2b5368ed2d
+      internalID: -701614587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +169,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hallway (2) (1) 1-export_0: 1910814482
+      hallway (2) (1) 1-export_1: -1804505632
+      hallway (2) (1) 1-export_2: -701614587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
