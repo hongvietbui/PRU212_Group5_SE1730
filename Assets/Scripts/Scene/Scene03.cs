@@ -6,7 +6,8 @@ public class SceneManagement : MonoBehaviour
 {
     public List<AudioClip> backgroundMusicList;
     public List<AudioClip> effectList;
-    
+    public string backgroundMusicToPlayName;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class SceneManagement : MonoBehaviour
         //Reload effect list
         AudioManager.Instance.SetSoundEffectList(effectList);
         //Play background music
-        AudioManager.Instance.PlayMusic("prologue");
+        AudioManager.Instance.PlayMusic(backgroundMusicToPlayName);
     }
 
     // Update is called once per frame
