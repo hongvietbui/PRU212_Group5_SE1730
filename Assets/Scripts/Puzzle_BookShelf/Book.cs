@@ -3,10 +3,11 @@
 public class Book : MonoBehaviour
 {
     public int originalIndex;
+    public Sprite detailImage; // Add a sprite for the detail image
 
     private void Start()
     {
-        // Sử dụng tên của GameObject làm tên sách
+        // Use the name of the GameObject as the name of the book
         string bookName = gameObject.name;
     }
 }
