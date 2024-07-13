@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
-  m_Name: RoomDialouge2
+  m_Name: RoomDialouge4
   m_EditorClassIdentifier: 
   elements:
   - ids: dialogue_1
@@ -18,7 +18,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Player
-    message: i did it, i finally overcome myself
+    message: I should probably check the schedule on the computer.
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
@@ -26,18 +26,9 @@ MonoBehaviour:
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Player
-    message: "ah man i better  to go to the  library\U0001F60A\U0001F60A\U0001F60A\U0001F60A\U0001F60A\U0001F60A\U0001F60A\U0001F618\U0001F618\U0001F618\U0001F618"
+    title: Narrator
+    message: //call,hide_dialogue
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 3
-  - ids: dialogue_3
-    idi: 3
-    color_type: {r: 0, g: 1, b: 0, a: 1}
-    eie: 1
-    title: Player
-    message: It late right now!!!!//quit
-    audio: {fileID: 0}
-    follows: []
-    auto_next_idi: 2
+    auto_next_idi: 1
   auto_save: 0

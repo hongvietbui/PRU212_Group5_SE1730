@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace narrenschlag.dialoguez
@@ -16,8 +18,7 @@ namespace narrenschlag.dialoguez
         public Canvas dialogueCanvas;       // Reference to the dialogue canvas
         public GameObject playerObject;     // Reference to the player object to disappear
         public DialogueZ dialogueManager;   // Reference to the DialogueZ component
-        public string dialogueIdFirst;      // ID of the first dialogue to start
-        public string dialogueIdLast;       // ID of the last dialogue to end
+    
         public GameObject puzzleCanvas;     // Reference to the puzzle UI canvas
         public AudioClip interactionSound;  // Sound to play on interaction start and end
         public AudioClip rewardSound;       // Sound to play when the reward canvas is set active
@@ -26,35 +27,42 @@ namespace narrenschlag.dialoguez
         private bool isInteracting = false; // Flag to track if interaction is ongoing
         private string currentDialogueId;   // Tracks the current dialogue ID
         private AudioSource audioSource;    // Reference to the AudioSource component
+        public Canvas InstructionDialouge;
+        // Define events for game start and after animation
+        public UnityEvent OnGameStart;
+        public UnityEvent OnAfterAnimation;
 
         void Start()
         {
-            // Ensure the interact canvas is initially hidden
+           // Ensure the interact canvas is initially hidden
             interactCanvas.gameObject.SetActive(false);
 
-            // Ensure the interact text is initially disabled
+          //  Ensure the interact text is initially disabled
             interactText.SetActive(false);
 
-            // Ensure the dialogue canvas is initially hidden
+         //   Ensure the dialogue canvas is initially hidden
             dialogueCanvas.gameObject.SetActive(false);
 
-            // Ensure the player object is initially hidden
+          //  Ensure the player object is initially hidden
             playerObject.gameObject.SetActive(false);
 
-            // Ensure the puzzle canvas is initially hidden
+          //  Ensure the puzzle canvas is initially hidden
             if (puzzleCanvas != null)
             {
                 puzzleCanvas.SetActive(false);
             }
 
-            // Get the AudioSource component
+          //  Get the AudioSource component
             audioSource = GetComponent<AudioSource>();
 
-            // Subscribe to the dialogue end event
-            if (dialogueManager != null)
-            {
-                dialogueManager.onDialogueEnd.AddListener(OnDialogueEnd);
-            }
+          //  Subscribe to the dialogue end event
+           InstructionDialouge.gameObject.SetActive(false);
+
+           //  Trigger the game start event
+            OnGameStart.Invoke();
+           InstructionDialouge.gameObject.SetActive(true);
+         //   Start the first dialogue at the beginning of the project
+
         }
 
         void Update()
@@ -90,6 +98,8 @@ namespace narrenschlag.dialoguez
                 ShowInteractText(false);
             }
         }
+
+     
 
         void StartInteraction()
         {
@@ -139,54 +149,14 @@ namespace narrenschlag.dialoguez
             // Show the dialogue canvas
             dialogueCanvas.gameObject.SetActive(true);
 
-            // Notify DialogueManager (DialogueZ) to start the dialogue
-            if (dialogueManager != null && !string.IsNullOrEmpty(dialogueIdFirst))
-            {
-                DialogueZ.SetDatabase(dialogueManager.db);
+            // Trigger the after animation event
+            OnAfterAnimation.Invoke();
 
-                DialogueZElement element;
-                if (DialogueZ.TryGetDialogue_Ids(dialogueIdFirst, out element))
-                {
-                    DialogueZ.Init(element, dialogueManager.db);
-                    currentDialogueId = dialogueIdFirst; // Set the current dialogue ID
-                }
-                else
-                {
-                    Debug.LogError("Dialogue element with ID " + dialogueIdFirst + " not found.");
-                }
-            }
+            // Notify DialogueManager (DialogueZ) to start the second dialogue
+
         }
 
-        void OnDialogueEnd()
-        {
-            Debug.Log("OnDialogueEnd called for dialogue ID: " + currentDialogueId);
-
-            // Check if the current dialogue is the last one
-            if (currentDialogueId == dialogueIdLast)
-            {
-                Debug.Log("Last dialogue ended, hiding player object.");
-
-                // Hide the player object
-                if (playerObject != null)
-                {
-                    playerObject.SetActive(false);
-                }
-
-                // Activate the ScriptInteract object
-                DialogueCanvasManager dialogueCanvasManager = dialogueManager.GetComponent<DialogueCanvasManager>();
-                dialogueCanvasManager.hideDialogue();
-            }
-            else
-            {
-                Debug.Log("Dialogue ended but not the last one, keeping player object active.");
-            }
-
-            // Dialogue has ended, hide dialogue canvas
-            dialogueCanvas.gameObject.SetActive(false);
-
-            // Reset interaction flag
-            isInteracting = false;
-        }
+      
 
         void ShowInteractText(bool show)
         {
