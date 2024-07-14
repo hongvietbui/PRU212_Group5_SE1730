@@ -1414,7 +1414,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaused: 0
   inventoryMenu: {fileID: 2327081310900071306}
-  items: []
+  items:
+  - {fileID: 11400000, guid: 80d27310e2d87cc44a7b5a4b45cbd844, type: 2}
+  - {fileID: 11400000, guid: 3b9a1bdf9f248dc4eb371630b156166b, type: 2}
   slots:
   - {fileID: 497943546920019134}
   - {fileID: 8030753851724871261}
@@ -3079,7 +3081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7, y: -181}
+  m_AnchoredPosition: {x: -14, y: 13}
   m_SizeDelta: {x: -113.85, y: -98.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4748931749496590354
@@ -3103,7 +3105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.07169801, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

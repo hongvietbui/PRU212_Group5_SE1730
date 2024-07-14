@@ -716,10 +716,11 @@ MonoBehaviour:
   resultText: {fileID: 143060602}
   quizBackground: {fileID: 322599553}
   questionPanel: {fileID: 162637311}
+  player: {fileID: 2104839056}
   result: {fileID: 1125451096}
   quiz: {fileID: 391978445}
   closeButton: {fileID: 1427603338}
-  itemData: {fileID: 11400000, guid: 3b9a1bdf9f248dc4eb371630b156166b, type: 2}
+  itemData: {fileID: 11400000, guid: af8c9fe13a42e664c99d640da4c57a96, type: 2}
 --- !u!212 &123391141
 SpriteRenderer:
   m_ObjectHideFlags: 0

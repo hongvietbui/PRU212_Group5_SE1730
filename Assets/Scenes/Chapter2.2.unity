@@ -551,7 +551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 245072652}
   - component: {fileID: 245072651}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hallway (2) (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -2918,7 +2918,7 @@ GameObject:
   - component: {fileID: 936748777}
   - component: {fileID: 936748776}
   - component: {fileID: 936748775}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bookself (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3058,8 +3058,8 @@ Transform:
   m_GameObject: {fileID: 936748774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.26, y: 1.2975, z: 0}
-  m_LocalScale: {x: 0.27689016, y: 0.26121226, z: 0.32392392}
+  m_LocalPosition: {x: 1.3147, y: 1.4434, z: 0}
+  m_LocalScale: {x: 0.3042469, y: 0.33416885, z: 0.32392392}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3445,7 +3445,7 @@ GameObject:
   - component: {fileID: 1105125834}
   - component: {fileID: 1105125833}
   - component: {fileID: 1105125832}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SchoolObstacle (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3586,8 +3586,8 @@ Transform:
   m_GameObject: {fileID: 1105125831}
   serializedVersion: 2
   m_LocalRotation: {x: -0.9982588, y: -0, z: -0, w: 0.058985982}
-  m_LocalPosition: {x: 3.8803, y: -2.0545, z: -0.1007}
-  m_LocalScale: {x: 2.5653427, y: 1.8898942, z: 1.8898942}
+  m_LocalPosition: {x: 3.9168, y: -1.8904, z: -0.0812}
+  m_LocalScale: {x: 2.516601, y: 1.6738793, z: 1.8898942}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4253,9 +4253,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundCheck: {fileID: 2026888304}
   Char_speed: 0
-  wSpeed: 6
-  rSpeed: 10
-  jumpForce: 4
+  wSpeed: 4
+  rSpeed: 6
+  jumpForce: 5
 --- !u!114 &1451956584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5826,8 +5826,8 @@ Transform:
   m_GameObject: {fileID: 1946211051}
   serializedVersion: 2
   m_LocalRotation: {x: -0.015036088, y: -0, z: -0, w: 0.999887}
-  m_LocalPosition: {x: 3.8803, y: 2.0545, z: 0.1007}
-  m_LocalScale: {x: 2.5653427, y: 1.8898942, z: 1.8898942}
+  m_LocalPosition: {x: 3.853, y: 1.7674, z: 0.1094}
+  m_LocalScale: {x: 2.2377834, y: 1.5145949, z: 1.8898942}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -10,6 +10,7 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI resultText; 
     public GameObject quizBackground; 
     public GameObject questionPanel; 
+    public GameObject player; 
     public GameObject result; 
     public GameObject quiz; 
     public Button closeButton;
@@ -101,6 +102,7 @@ public class QuizManager : MonoBehaviour
             {
                 resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. You receive an A+ soul fragment";
                 InventoryManager.Instance.AddItem(itemData);
+                SaveLoadData.SavePlayerPosition(player.transform.position);
             }
             else
             {
