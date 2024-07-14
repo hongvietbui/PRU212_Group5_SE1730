@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ba8fb18ddbf4d66ae62d1545f49317, type: 3}
   m_Name: quiz
   m_EditorClassIdentifier: 
-  itemName: A+ spirit
+  itemName: pass
   itemDes: You passed the exam with effort
   itemSprite: {fileID: 21300000, guid: 871de1f2ffb6895488688ba743f9d589, type: 3}
   number: 1
