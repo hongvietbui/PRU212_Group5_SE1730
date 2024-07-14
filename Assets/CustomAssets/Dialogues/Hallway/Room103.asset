@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
-  m_Name: WrongDoor1
+  m_Name: Room103
   m_EditorClassIdentifier: 
   elements:
   - ids: dialogue_1
@@ -18,7 +18,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Character
-    message: I dont think this is my class !
+    message: Oh There it is
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
@@ -27,7 +27,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Character
-    message: //call,hide_dialogue
+    message: Get in now !!!!//quit
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 1
