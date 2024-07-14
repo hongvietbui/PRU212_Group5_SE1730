@@ -8,6 +8,8 @@ public class SceneManagement : MonoBehaviour
     public List<AudioClip> effectList;
     public string backgroundMusicToPlayName;
 
+    private bool isTheThinkerPuzzleDone = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +25,9 @@ public class SceneManagement : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void ChangeTheThinkerPuzzleStatus(bool status) {
+        isTheThinkerPuzzleDone = status;
     }
 }
