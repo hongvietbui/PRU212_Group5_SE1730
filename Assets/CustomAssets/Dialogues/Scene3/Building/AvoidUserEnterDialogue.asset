@@ -21,7 +21,7 @@ MonoBehaviour:
     message: Hmm... I don't think I should go there!
     audio: {fileID: 8300000, guid: c715a951b22c344419680ecc56a11825, type: 3}
     follows: []
-    auto_next_idi: 2
+    auto_next_idi: 3
   - ids: dialogue_2
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
