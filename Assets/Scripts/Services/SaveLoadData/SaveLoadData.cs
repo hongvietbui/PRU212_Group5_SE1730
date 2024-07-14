@@ -43,11 +43,12 @@ public class SaveLoadData : MonoBehaviour
         }
     }
 
-    public static void SavePlayerPosition(Vector3 position, string checkpointName)
+    public static void SavePlayerPosition(Vector3 position)
     {
         string filePath = Application.persistentDataPath + "/playerPosition.json";
         string sceneName = SceneManager.GetActiveScene().name;
-        PlayerPosition playerPosition = new PlayerPosition(position, sceneName, checkpointName);
+        Debug.Log(sceneName);
+        PlayerPosition playerPosition = new PlayerPosition(position, sceneName);
         string json = JsonUtility.ToJson(playerPosition);
         File.WriteAllText(filePath, json);
     }
@@ -83,15 +84,13 @@ public class PlayerPosition
     public float y;
     public float z;
     public string sceneName;
-    public string checkpointName;
 
-    public PlayerPosition(Vector3 position, string sceneName, string checkpointName)
+    public PlayerPosition(Vector3 position, string sceneName)
     {
         x = position.x;
         y = position.y;
         z = position.z;
         this.sceneName = sceneName;
-        this.checkpointName = checkpointName;
     }
 
     public Vector3 ToVector3()

@@ -11,6 +11,7 @@ public class QuizManager : MonoBehaviour
     public GameObject quizBackground; 
     public GameObject questionPanel; 
     public GameObject result; 
+    public GameObject quiz; 
     public Button closeButton;
     public Item itemData;
 
@@ -48,6 +49,15 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
+        List<Item> items = InventoryManager.Instance.items;
+        Debug.Log(items.Count);
+        foreach (Item item in items)
+        {
+            if(item.itemName == itemData.itemName)
+            {
+                quiz.SetActive(false);
+            }
+        }
         quizBackground.SetActive(false);
         questionPanel.SetActive(false);
         result.SetActive(false);
@@ -55,6 +65,11 @@ public class QuizManager : MonoBehaviour
         {
             button.onClick.AddListener(() => OnAnswerSelected(button));
         }
+    }
+
+    private void Update()
+    {
+        
     }
 
     public void StartQuiz()
@@ -85,7 +100,7 @@ public class QuizManager : MonoBehaviour
             if (score >= 5)
             {
                 resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. You receive an A+ soul fragment";
-                InventoryManager.instance.AddItem(itemData);
+                InventoryManager.Instance.AddItem(itemData);
             }
             else
             {

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InventoryUIManager : MonoBehaviour
 {
+    public bool isPaused;
     public GameObject inventoryMenu;
 
     private void Start()
@@ -21,7 +22,7 @@ public class InventoryUIManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             //if Game is Paused, press Escape, Resume the Game
-            if(InventoryManager.instance.isPaused)
+            if(isPaused)
             {
                 Resume();
             }
@@ -37,14 +38,14 @@ public class InventoryUIManager : MonoBehaviour
     {
         inventoryMenu.gameObject.SetActive(false);
         Time.timeScale = 1.0f;//Real time is 1.0f
-        InventoryManager.instance.isPaused = false;
+        isPaused = false;
     }
 
     private void Pause()
     {
         inventoryMenu.gameObject.SetActive(true);
         Time.timeScale = 0.0f;//STOP THE TIME
-        InventoryManager.instance.isPaused = true;
+        isPaused = true;
     }
 
 

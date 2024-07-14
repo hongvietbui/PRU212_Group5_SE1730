@@ -12,7 +12,7 @@ public class PickupItem : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            if(InventoryManager.instance.items.Count < InventoryManager.instance.slots.Length)//Items number greater than the Inventory Grid total/max numbers
+            if(InventoryManager.Instance.items.Count < InventoryManager.instance.slots.Length)//Items number greater than the Inventory Grid total/max numbers
             {
                 Instantiate(pickupEffect, transform.position, Quaternion.identity);
                 Destroy(gameObject);
