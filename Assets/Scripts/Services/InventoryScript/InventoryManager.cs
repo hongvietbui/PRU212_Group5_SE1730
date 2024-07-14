@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    public static InventoryManager instance;//MARKER SINGLETON PATTERN
     public bool isPaused;
+    public GameObject inventoryMenu;
 
     public List<Item> items;
     public GameObject[] slots;
@@ -17,6 +17,26 @@ public class InventoryManager : MonoBehaviour
     public ItemButton thisButton;//Keep Track of which Item Button We are mouse Hovering
     public ItemButton[] itemButtons;//ALL of ITEM BUTTONS in this game [Used for reset]
 
+    public static InventoryManager instance;
+
+    public static InventoryManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                Debug.Log("sing");
+                instance = FindObjectOfType<InventoryManager>();
+                if (instance == null)
+                {
+                    GameObject singleton = Instantiate(Resources.Load<GameObject>("InventoryCanvas"));
+                    instance = singleton.GetComponent<InventoryManager>();
+                    DontDestroyOnLoad(singleton);
+                }
+            }
+            return instance;
+        }
+    }
 
     private void Awake()
     {
@@ -25,29 +45,55 @@ public class InventoryManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
             items = SaveLoadData.LoadInventory();
+
         }
-        else
+        else if (instance != this)
         {
             Destroy(gameObject);
         }
     }
 
-    void OnApplicationQuit()
+    private void Start()
+    {
+        
+        if (inventoryMenu != null)
+        {
+            inventoryMenu.SetActive(false);
+        }
+        DisplayItems();
+    }
+
+
+    public void Resume()
+    {
+        if (inventoryMenu != null)
+        {
+            inventoryMenu.SetActive(false);
+        }
+        Time.timeScale = 1.0f;
+        isPaused = false;
+    }
+
+    public void Pause()
+    {
+        if (inventoryMenu != null)
+        {
+            inventoryMenu.SetActive(true);
+        }
+        Time.timeScale = 0.0f;
+        isPaused = true;
+    }
+
+    private void OnApplicationQuit()
     {
         SaveLoadData.SaveInventory(items);
     }
 
-    private void Start()
-    {
-        DisplayItems();
-    }
-
     private void DisplayItems()
     {
-        //We IGNORE the fact
-        for(int i = 0; i < slots.Length; i++)
+        for (int i = 0; i < slots.Length; i++)
         {
-            if(i < items.Count)
+            if (i < items.Count)
             {
                 //UPDATE slots Item Image
                 slots[i].transform.GetChild(0).GetComponent<Image>().color = new Color(1, 1, 1, 1);
@@ -60,7 +106,7 @@ public class InventoryManager : MonoBehaviour
                 //UPDATE CLOSE/THROW button
                 slots[i].transform.GetChild(2).gameObject.SetActive(true);
             }
-            else//Some Remove Items
+            else
             {
                 //UPDATE slots Item Image
                 slots[i].transform.GetChild(0).GetComponent<Image>().color = new Color(1, 1, 1, 0);
@@ -98,16 +144,15 @@ public class InventoryManager : MonoBehaviour
 
     public void RemoveItem(Item _item)
     {
-        if(items.Contains(_item))
+        if (items.Contains(_item))
         {
-            for(int i = 0; i < items.Count; i++)
+            for (int i = 0; i < items.Count; i++)
             {
-                if(_item == items[i])
+                if (_item == items[i])
                 {
                     items[i].number--;
-                    if(items[i].number == 0)
+                    if (items[i].number == 0)
                     {
-                        
                         items.Remove(_item);
                     }
                 }
@@ -117,7 +162,6 @@ public class InventoryManager : MonoBehaviour
         {
             Debug.Log("THERE IS NO " + _item + " in my Bags");
         }
-        //IF There is no ITEM inside Inventory 
 
         ResetButtonItems();
         DisplayItems();
@@ -125,17 +169,16 @@ public class InventoryManager : MonoBehaviour
 
     public void ResetButtonItems()
     {
-        for(int i = 0; i < itemButtons.Length; i++)//FOR LOOP ALL OF BUTTONS. Total Number in this game is 21 slots
+        for (int i = 0; i < itemButtons.Length; i++)
         {
-            if(i < items.Count)
+            if (i < items.Count)
             {
-                itemButtons[i].thisItem = items[i];//Once This button contains the Item, Assign the ITEM to "thisItem";
+                itemButtons[i].thisItem = items[i];
             }
             else
             {
-                itemButtons[i].thisItem = null;//Otherwise, Set the "thisItem" to NULL!
+                itemButtons[i].thisItem = null;
             }
         }
-    } 
-
+    }
 }

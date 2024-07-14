@@ -821,6 +821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 123391144}
   - component: {fileID: 123391143}
+  - component: {fileID: 123391145}
   - component: {fileID: 123391140}
   - component: {fileID: 123391142}
   - component: {fileID: 123391141}
@@ -850,11 +851,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   resultText: {fileID: 143060602}
-  quizBackground: {fileID: 0}
-  questionPanel: {fileID: 0}
+  quizBackground: {fileID: 322599553}
+  questionPanel: {fileID: 162637311}
+  player: {fileID: 2104839056}
   result: {fileID: 1125451096}
-  closeButton: {fileID: 0}
-  itemData: {fileID: 11400000, guid: 3b9a1bdf9f248dc4eb371630b156166b, type: 2}
+  quiz: {fileID: 391978445}
+  closeButton: {fileID: 1427603338}
+  itemData: {fileID: 11400000, guid: af8c9fe13a42e664c99d640da4c57a96, type: 2}
 --- !u!212 &123391141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -994,6 +997,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &123391145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123391139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9975f313e011774caaa3647c9f0e1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &143060601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,11 +2254,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.62
+      value: -10.93
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.58
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2298,8 +2313,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8991388801589871306, guid: 786d6c96388563a418e38924dbc48007, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2027505645}
+      insertIndex: 2
+      addedObject: {fileID: 2104839061}
+    - targetCorrespondingSourceObject: {fileID: 8991388801589871306, guid: 786d6c96388563a418e38924dbc48007, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 2104839067}
   m_SourcePrefab: {fileID: 100100000, guid: 786d6c96388563a418e38924dbc48007, type: 3}
 --- !u!1 &1203122575
 GameObject:
@@ -3144,6 +3162,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de5dc580760f4148a8a2b22be6b8de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 962819762}
+  questionPanel: {fileID: 322599553}
+--- !u!114 &2104839067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104839056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fd9c85643ba9f4d964710c7b989476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2104839056}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
