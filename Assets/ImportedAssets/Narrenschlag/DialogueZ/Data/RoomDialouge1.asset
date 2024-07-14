@@ -53,11 +53,11 @@ MonoBehaviour:
     idi: 5
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Black Shadow
+    title: InnerSoul Self
     message: Yes, I'm the part of you that carries the weight of your worries.
     audio: {fileID: 8300000, guid: bb571e60efe053c4d8da4f39b4075d9f, type: 3}
     follows: []
-    auto_next_idi: 6
+    auto_next_idi: 13
   - ids: dialogue_6
     idi: 6
     color_type: {r: 0, g: 1, b: 0, a: 1}
@@ -71,7 +71,7 @@ MonoBehaviour:
     idi: 7
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Black Shadow
+    title: InnerSoul Self
     message: To fix your computer, you need to confront something.
     audio: {fileID: 8300000, guid: bb571e60efe053c4d8da4f39b4075d9f, type: 3}
     follows: []
@@ -89,7 +89,7 @@ MonoBehaviour:
     idi: 9
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Black Shadow
+    title: InnerSoul Self
     message: Look around you... Look... around..
     audio: {fileID: 8300000, guid: bb571e60efe053c4d8da4f39b4075d9f, type: 3}
     follows: []
@@ -98,7 +98,7 @@ MonoBehaviour:
     idi: 10
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Black Shadow
+    title: InnerSoul Self
     message: ...Remeber.....The...Past...Trauma.....The.....Number
     audio: {fileID: 8300000, guid: ed7d5936a8af51640bd4c39e5240bbc6, type: 3}
     follows: []
@@ -107,7 +107,7 @@ MonoBehaviour:
     idi: 11
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Black Shadow
+    title: InnerSoul Self
     message: .....GoodBye.....//call,event_1
     audio: {fileID: 0}
     follows: []
@@ -121,4 +121,21 @@ MonoBehaviour:
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 11
+  - ids: dialogue_13
+    idi: 13
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: InnerSoul Self
+    message: Are u Oke
+    audio: {fileID: 0}
+    follows:
+    - next_idi: 6
+      message: No,Im Not
+      requ: 
+      er: 0
+    - next_idi: 6
+      message: Im Fine
+      requ: 
+      er: 0
+    auto_next_idi: 12
   auto_save: 0
