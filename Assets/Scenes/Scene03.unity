@@ -946,7 +946,8 @@ Transform:
   m_LocalPosition: {x: 42.33, y: 2.63, z: -3}
   m_LocalScale: {x: 0.6710945, y: 0.619026, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 216538203}
   m_Father: {fileID: 1120996880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &211397752
@@ -1243,6 +1244,52 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &216538202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 216538203}
+  - component: {fileID: 216538204}
+  m_Layer: 0
+  m_Name: End_Puzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &216538203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216538202}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 211397751}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &216538204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216538202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e408ec88e871e4342ac6c1e40175a161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  innerSoul: {fileID: 11400000, guid: ff5f04ea59354e84db6edd9dd3e03541, type: 2}
+  player: {fileID: 1928884902}
 --- !u!1 &230156004
 GameObject:
   m_ObjectHideFlags: 0
@@ -18611,6 +18658,37 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Sanh_Beta
+            m_BoolArgument: 0
+          m_CallState: 2
+  - ids: receive_inner_soul
+    idi: 7
+    c: {r: 1.6282899, g: 1.1245582, b: 1.3288152, a: 1.75}
+    eie: 1
+    onCast:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 216538204}
+          m_TargetAssemblyTypeName: End_PuzzleScript, Assembly-CSharp
+          m_MethodName: ReceiveInnerSoul
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 641449038}
+          m_TargetAssemblyTypeName: DialogueCanvasManager, Assembly-CSharp
+          m_MethodName: hideDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
   onDialogueEnd:
@@ -130052,6 +130130,7 @@ GameObject:
   - component: {fileID: 1678670478}
   - component: {fileID: 1678670477}
   - component: {fileID: 1678670479}
+  - component: {fileID: 1678670480}
   m_Layer: 0
   m_Name: SceneManagement
   m_TagString: Untagged
@@ -130101,6 +130180,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6abf6e94c4f7ab41b9479d604b3be36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1678670480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678670475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9975f313e011774caaa3647c9f0e1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1701803654
@@ -138163,6 +138254,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1928884902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8991388801589871306, guid: 786d6c96388563a418e38924dbc48007, type: 3}
+  m_PrefabInstance: {fileID: 9189097204633449772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1978132827
 GameObject:
   m_ObjectHideFlags: 0

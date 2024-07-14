@@ -54,7 +54,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Narrator
-    message: //call,hide_dialogue
+    message: //call,receive_inner_soul
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 4
