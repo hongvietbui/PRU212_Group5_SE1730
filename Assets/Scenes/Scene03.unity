@@ -1084,7 +1084,8 @@ Transform:
   m_LocalPosition: {x: 42.33, y: 2.63, z: -3}
   m_LocalScale: {x: 0.6710945, y: 0.619026, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 216538203}
   m_Father: {fileID: 1120996880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &211397752
@@ -19223,6 +19224,37 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Hallway
+            m_BoolArgument: 0
+          m_CallState: 2
+  - ids: receive_inner_soul
+    idi: 7
+    c: {r: 1.6282899, g: 1.1245582, b: 1.3288152, a: 1.75}
+    eie: 1
+    onCast:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 216538204}
+          m_TargetAssemblyTypeName: End_PuzzleScript, Assembly-CSharp
+          m_MethodName: ReceiveInnerSoul
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 641449038}
+          m_TargetAssemblyTypeName: DialogueCanvasManager, Assembly-CSharp
+          m_MethodName: hideDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
   onDialogueEnd:
@@ -138950,6 +138982,11 @@ Transform:
   - {fileID: 1347773500}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1928884902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8991388801589871306, guid: 786d6c96388563a418e38924dbc48007, type: 3}
+  m_PrefabInstance: {fileID: 9189097204633449772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1978132827
 GameObject:
   m_ObjectHideFlags: 0

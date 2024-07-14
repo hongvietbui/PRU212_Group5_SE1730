@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
-using Unity.VisualScripting;
+using System.Collections.Generic;
 
 public class ScriptInteract : MonoBehaviour
 {
@@ -15,7 +15,7 @@ public class ScriptInteract : MonoBehaviour
     public string correctNumber = "15324"; // Correct number sequence for the puzzle
     public GameObject RewardCanvas;     // Reference to the reward canvas
     public Button rewardCancelButton;   // Reference to the cancel button in the reward canvas
-    public GameObject  Square1;
+    public GameObject Square1;
     public GameObject Square2;
     private bool canInteractWithStartaftermyPC = false; // Flag to determine if the player can interact with StartaftermyPC
     private bool playerInCollider = false; // Flag to check if the player is within the collider
@@ -24,14 +24,41 @@ public class ScriptInteract : MonoBehaviour
     public InteractableEvent[] onRewardCancel;
     public UnityEvent onPuzzleActivate; // Event for when the puzzle is activated
     public UnityEvent onCorrectPassword; // Event for when the correct password is entered
+    public Item ItemPuzzelPass;
+    public GameObject Player;
+    public GameObject mypcafterPass;
+    public GameObject pccolider;
 
+    private bool interactionEnabled = true; // New flag to control interaction state
+    private bool rewardInteractionEnabled = true; // New flag to control reward interaction state
+    public GameObject Enemy;
+    public Canvas DialougeCanvas;
     void Start()
     {
         InitializeComponents();
     }
-  
+
     void InitializeComponents()
     {
+        List<Item> items = InventoryManager.Instance.items;
+        Debug.Log(items.Count);
+        foreach (Item item in items)
+        {
+            if (item.itemName == ItemPuzzelPass.itemName)
+            {
+                interactionEnabled = false;
+                rewardInteractionEnabled = false;
+                rewardInteractionEnabled = false;
+                mypcafterPass.gameObject.SetActive(true);
+                pccolider.gameObject.SetActive(true);
+                myPC.gameObject.SetActive(false);
+                Square1.gameObject.SetActive(false);
+                Square2.gameObject.SetActive(false);
+                Enemy.gameObject.SetActive(false);
+                DialougeCanvas.gameObject.SetActive(false);
+            }
+        }
+
         // Deactivate unnecessary components initially
         if (text != null)
         {
@@ -49,7 +76,6 @@ public class ScriptInteract : MonoBehaviour
         {
             RewardCanvas.SetActive(false);
         }
-
 
         // Setup button listeners
         if (cancelButton != null)
@@ -77,7 +103,7 @@ public class ScriptInteract : MonoBehaviour
     void Update()
     {
         // Ensure interaction happens only when the player is within the collider and presses the E key
-        if (playerInCollider && canInteractWithStartaftermyPC && Input.GetKeyDown(KeyCode.E))
+        if (playerInCollider && canInteractWithStartaftermyPC && interactionEnabled && Input.GetKeyDown(KeyCode.E))
         {
             InteractWithStartaftermyPC();
         }
@@ -86,7 +112,7 @@ public class ScriptInteract : MonoBehaviour
     public void ActivateInteractionText()
     {
         // Enable the StartaftermyPC object for interaction
-        if (StartaftermyPC != null)
+        if (interactionEnabled && StartaftermyPC != null)
         {
             StartaftermyPC.SetActive(true);
         }
@@ -158,7 +184,7 @@ public class ScriptInteract : MonoBehaviour
         }
 
         // Re-enable the StartaftermyPC object for interaction
-        if (StartaftermyPC != null)
+        if (interactionEnabled && StartaftermyPC != null)
         {
             StartaftermyPC.SetActive(true);
         }
@@ -182,10 +208,10 @@ public class ScriptInteract : MonoBehaviour
         }
 
         // Disable interaction with StartaftermyPC
-        if (StartaftermyPC != null)
-        {
-            StartaftermyPC.SetActive(false);
-        }
+        interactionEnabled = false;
+
+        // Disable reward interaction
+        rewardInteractionEnabled = false;
 
         // Reset the input field
         ResetInput();
@@ -206,7 +232,7 @@ public class ScriptInteract : MonoBehaviour
     // Example method called after cancelling the reward canvas
     void TriggerEvents()
     {
-        //invoke every event
+        // Invoke every event
         foreach (InteractableEvent interactableEvent in onRewardCancel)
         {
             Debug.Log("Event: " + interactableEvent.eventName);
@@ -251,8 +277,16 @@ public class ScriptInteract : MonoBehaviour
             {
                 onCorrectPassword.Invoke();
             }
+            InventoryManager.Instance.AddItem(ItemPuzzelPass);
+            SaveLoadData.SavePlayerPosition(Player.transform.position);
             Square1.gameObject.SetActive(false);
             Square2.gameObject.SetActive(false);
+
+            // Disable interaction with StartaftermyPC
+            interactionEnabled = false;
+
+            // Disable reward interaction
+            rewardInteractionEnabled = false;
         }
         else
         {

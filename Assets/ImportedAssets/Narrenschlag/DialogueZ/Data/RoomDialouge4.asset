@@ -30,5 +30,5 @@ MonoBehaviour:
     message: //call,hide_dialogue
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 1
+    auto_next_idi: 2
   auto_save: 0
