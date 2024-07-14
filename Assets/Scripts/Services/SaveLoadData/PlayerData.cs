@@ -1,26 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-[System.Serializable]
-public class PlayerData 
+public class PlayerData : MonoBehaviour
 {
-    public int health;
-    public string name;
-    public int level;
-    public float[] position;
+    public GameObject player;
 
-    public PlayerData(Player player)
+    private void Awake()
     {
-        health = player.health;
-        name = player.name;
-        level = player.level;
 
-        Vector3 playerPos = player.transform.position;
-
-        position = new float[]
-        {
-            playerPos.x, playerPos.y, playerPos.z
-        };
+        LoadPlayerPosition();
     }
+
+    private void OnApplicationQuit()
+    {
+        SaveLoadData.SavePlayerPosition(player.transform.position);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            SaveLoadData.SavePlayerPosition(player.transform.position);
+            Debug.Log("V");
+        }
+    }
+
+
+    public void LoadPlayerPosition()
+    {
+        PlayerPosition playerPosition = SaveLoadData.LoadPlayerPosition();
+
+        if (SceneManager.GetActiveScene().name != playerPosition.sceneName)
+        {
+            SceneManager.LoadScene(playerPosition.sceneName);
+        }
+
+        player.transform.position = playerPosition.ToVector3();
+        
+    }
+
 }

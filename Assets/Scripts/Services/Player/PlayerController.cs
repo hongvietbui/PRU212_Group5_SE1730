@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMovement;
 
     public bool isDialogueActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +23,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isDialogueActive) {
-            //Make player stop moving when dialogue is active
+        if (isDialogueActive)
+        {
+            // Make player stop moving when dialogue is active
             movement = Vector2.zero;
             animator.SetFloat("Speed", 0);
             return;
@@ -45,31 +47,35 @@ public class PlayerController : MonoBehaviour
         transform.Translate(movement * speed * Time.deltaTime);
     }
 
-    void UpdateAnimation() {
+    void UpdateAnimation()
+    {
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        //Check if player is not moving
+        // Check if player is not moving
         if (movement == Vector2.zero)
         {
             animator.SetFloat("Horizontal", lastMovement.x);
             animator.SetFloat("Vertical", lastMovement.y);
         }
 
-        //Add foodstep effect sound
-        if (movement.sqrMagnitude > 0 && !AudioManager.Instance.effectSource.isPlaying)
+        // Add footstep effect sound
+        if (AudioManager.Instance != null && AudioManager.Instance.effectSource != null)
         {
-            AudioManager.Instance.PlaySoundEffect("Footsteps_walking");
-        }
-        else if (movement.sqrMagnitude == 0 && AudioManager.Instance.effectSource.isPlaying)
-        {
-            AudioManager.Instance.effectSource.Stop();
+            if (movement.sqrMagnitude > 0 && !AudioManager.Instance.effectSource.isPlaying)
+            {
+                AudioManager.Instance.PlaySoundEffect("Footsteps_walking");
+            }
+            else if (movement.sqrMagnitude == 0 && AudioManager.Instance.effectSource.isPlaying)
+            {
+                AudioManager.Instance.effectSource.Stop();
+            }
         }
     }
 
-    //Block player movement if player meet collider 2d
+    // Block player movement if player meets collider 2D
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Obstacle")
@@ -78,4 +84,3 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
-

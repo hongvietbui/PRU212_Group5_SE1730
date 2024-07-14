@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Text
+  - QuestionTrigger
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -12,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Ground
   - 
   - 
   - 
@@ -71,4 +73,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 3385707521
+    locked: 0
+  - name: Player
+    uniqueID: 2231820741
     locked: 0

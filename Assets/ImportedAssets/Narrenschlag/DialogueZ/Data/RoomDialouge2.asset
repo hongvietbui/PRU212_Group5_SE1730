@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
+  m_Name: RoomDialouge2
+  m_EditorClassIdentifier: 
+  elements:
+  - ids: dialogue_1
+    idi: 1
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Player
+    message: i did it, i finally overcome myself
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 2
+  - ids: dialogue_2
+    idi: 2
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Player
+    message: "ah man i better  to go to the  library\U0001F60A\U0001F60A\U0001F60A\U0001F60A\U0001F60A\U0001F60A\U0001F60A\U0001F618\U0001F618\U0001F618\U0001F618"
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 3
+  - ids: dialogue_3
+    idi: 3
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Player
+    message: It late right now!!!!//quit
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 2
+  auto_save: 0
