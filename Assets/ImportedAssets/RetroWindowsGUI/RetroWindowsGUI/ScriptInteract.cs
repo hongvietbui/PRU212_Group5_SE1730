@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
+using Unity.VisualScripting;
 
 public class ScriptInteract : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class ScriptInteract : MonoBehaviour
     public string correctNumber = "15324"; // Correct number sequence for the puzzle
     public GameObject RewardCanvas;     // Reference to the reward canvas
     public Button rewardCancelButton;   // Reference to the cancel button in the reward canvas
-
+    public GameObject  Square1;
+    public GameObject Square2;
     private bool canInteractWithStartaftermyPC = false; // Flag to determine if the player can interact with StartaftermyPC
     private bool playerInCollider = false; // Flag to check if the player is within the collider
     private string currentInput = ""; // Current input string
@@ -249,6 +251,8 @@ public class ScriptInteract : MonoBehaviour
             {
                 onCorrectPassword.Invoke();
             }
+            Square1.gameObject.SetActive(false);
+            Square2.gameObject.SetActive(false);
         }
         else
         {
