@@ -2,6 +2,7 @@
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class QuizManager : MonoBehaviour
 {
@@ -14,7 +15,11 @@ public class QuizManager : MonoBehaviour
     public GameObject quiz; 
     public Button closeButton;
     public Item itemData;
-
+    public UnityEvent OnGameStart;
+    public UnityEvent OnPuzzelEnd;
+    public GameObject Interact;
+    public GameObject Square;
+    public GameObject Square2;
     private string[] questions = new string[]
 {
     "1. When you feel academic pressure, what should you do first?",
@@ -49,6 +54,7 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
+        OnGameStart.Invoke();
         List<Item> items = InventoryManager.Instance.items;
         Debug.Log(items.Count);
         foreach (Item item in items)
@@ -56,7 +62,10 @@ public class QuizManager : MonoBehaviour
             if(item.itemName == itemData.itemName)
             {
                 quiz.SetActive(false);
+                Square2.gameObject.SetActive(false);
+                Square.gameObject.SetActive(false);
             }
+ 
         }
         quizBackground.SetActive(false);
         questionPanel.SetActive(false);
@@ -65,6 +74,7 @@ public class QuizManager : MonoBehaviour
         {
             button.onClick.AddListener(() => OnAnswerSelected(button));
         }
+   
     }
 
     private void Update()
@@ -93,14 +103,20 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
+
             quizBackground.SetActive(false);
             questionPanel.SetActive(false);
             result.SetActive(true);
+            
             resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. You receive an A+ soul fragment";
             if (score >= 5)
             {
                 resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. You receive an A+ soul fragment";
                 InventoryManager.Instance.AddItem(itemData);
+                OnPuzzelEnd.Invoke();
+                Interact.gameObject.SetActive(false);
+                Square2.gameObject.SetActive(false);
+                Square.gameObject.SetActive(false);
             }
             else
             {
