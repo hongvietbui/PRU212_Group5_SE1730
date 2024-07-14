@@ -117,7 +117,7 @@ public class QuizManager : MonoBehaviour
                 OnPuzzelEnd.Invoke();
                 Interact.gameObject.SetActive(false);
                 Square2.gameObject.SetActive(false);
-                Square.gameObject.SetActive(false);
+                Square.gameObject.SetActive(true);
             }
             else
             {
