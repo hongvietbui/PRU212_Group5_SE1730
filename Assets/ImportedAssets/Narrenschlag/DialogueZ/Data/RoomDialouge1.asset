@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RoomDialouge1
   m_EditorClassIdentifier: 
   elements:
-  - ids: _test
+  - ids: dialogue_1
     idi: 1
     color_type: {r: 0.8773585, g: 0.1614009, b: 0.1614009, a: 1}
     eie: 1
