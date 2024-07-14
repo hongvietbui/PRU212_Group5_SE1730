@@ -7,6 +7,7 @@ public class End_PuzzleScript : MonoBehaviour
 {
     public Item innerSoul;
     public GameObject player;
+    public GameObject checkPointPos;
 
     public UnityEvent theThinkerEventStartByLoading;
     public UnityEvent bookEventStartByLoading;
@@ -22,7 +23,11 @@ public class End_PuzzleScript : MonoBehaviour
             }
 
             if (item.itemName == "Book") {
-                bookEventStartByLoading.Invoke(); 
+                bookEventStartByLoading.Invoke();
+
+                //Teleport player to checkPointPos
+                player.transform.position = checkPointPos.transform.position;
+
                 continue;
             }
         }
