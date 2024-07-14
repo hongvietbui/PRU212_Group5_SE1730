@@ -9,6 +9,7 @@ public class SlidingPuzzle : MonoBehaviour
 	public Sprite[] sprites;
 	public Button reloadButton;
 	public Button cancelButton;
+	public Item ClassPhoto;
 	public Canvas canvas; // Reference to the Canvas component
 	private bool isCanvasActive = true; // Track the current state of the canvas
 	private int clickCount = 0;
@@ -161,6 +162,7 @@ public class SlidingPuzzle : MonoBehaviour
 			}
 		}
 		PuzzleState.isPuzzleSolved = true;
+		InventoryManager.Instance.AddItem(ClassPhoto);
 		SceneManager.LoadScene("Scene5_ExitClassRoom");
 		return true;
 	}
@@ -183,6 +185,6 @@ public class SlidingPuzzle : MonoBehaviour
 	void CancelPuzzle()
 	{
 		PuzzleState.isPuzzleSolved = false; // Ensure the puzzle is marked as not solved.
-		SceneManager.LoadScene("Scene5_ExitClassRoom");
+		SceneManager.LoadScene("Scene5");
 	}
 }

@@ -752,6 +752,7 @@ MonoBehaviour:
   - {fileID: 0}
   reloadButton: {fileID: 624889669}
   cancelButton: {fileID: 2137289448}
+  ClassPhoto: {fileID: 0}
   canvas: {fileID: 1175561870}
 --- !u!4 &1109394672
 Transform:
@@ -883,6 +884,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04967b12a18b3d241a0f9e6b8c5a7e56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1494337347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1494337348}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1494337348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494337347}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7697787, y: 0.43187678, z: -0.04416545}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137289446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,3 +1043,4 @@ SceneRoots:
   - {fileID: 68356003}
   - {fileID: 143354866}
   - {fileID: 1175561871}
+  - {fileID: 1494337348}
