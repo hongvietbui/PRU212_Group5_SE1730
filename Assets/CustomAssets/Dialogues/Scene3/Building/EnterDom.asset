@@ -10,27 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
-  m_Name: AvoidUserEnterDialogue
+  m_Name: EnterDom
   m_EditorClassIdentifier: 
   elements:
   - ids: dialogue_1
     idi: 1
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Character
-    message: Hmm... I don't think I should go there!
-    audio: {fileID: 8300000, guid: c715a951b22c344419680ecc56a11825, type: 3}
-    follows: []
-    auto_next_idi: 3
+    title: Narrator
+    message: Do you want to go to your room?
+    audio: {fileID: 0}
+    follows:
+    - next_idi: 2
+      message: Yes
+      requ: 
+      er: 0
+    - next_idi: 3
+      message: No
+      requ: 
+      er: 0
+    auto_next_idi: 1
   - ids: dialogue_2
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Character
-    message: It's almost test time and I need to go to Building A to study!
+    title: Narrator
+    message: //call,go_to_dom
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 3
+    auto_next_idi: 1
   - ids: dialogue_3
     idi: 3
     color_type: {r: 0, g: 1, b: 0, a: 1}
