@@ -716,6 +716,7 @@ MonoBehaviour:
   resultText: {fileID: 143060602}
   quizBackground: {fileID: 322599553}
   questionPanel: {fileID: 162637311}
+  player: {fileID: 2104839056}
   result: {fileID: 1125451096}
   quiz: {fileID: 391978445}
   closeButton: {fileID: 1427603338}

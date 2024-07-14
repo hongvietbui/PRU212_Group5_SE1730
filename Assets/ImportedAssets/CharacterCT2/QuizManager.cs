@@ -11,6 +11,7 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI resultText; 
     public GameObject quizBackground; 
     public GameObject questionPanel; 
+    public GameObject player; 
     public GameObject result; 
     public GameObject quiz; 
     public Button closeButton;

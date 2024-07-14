@@ -551,7 +551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 245072652}
   - component: {fileID: 245072651}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hallway (2) (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -3503,8 +3503,8 @@ Transform:
   m_GameObject: {fileID: 936748774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.26, y: 1.2975, z: 0}
-  m_LocalScale: {x: 0.27689016, y: 0.26121226, z: 0.32392392}
+  m_LocalPosition: {x: 1.3147, y: 1.4434, z: 0}
+  m_LocalScale: {x: 0.3042469, y: 0.33416885, z: 0.32392392}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
