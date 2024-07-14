@@ -18,16 +18,16 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Player
-    message: Lets go to the end of the hallway!!!
+    message: Come with me to the end of the hall!
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 1
+    auto_next_idi: 2
   - ids: dialogue_2
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Player
-    message: Lets go to the end of the hallway!!!//quit
+    message: TO GO TO THE ROOF TOF//quit
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 1
