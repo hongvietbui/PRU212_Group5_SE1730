@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3ba8fb18ddbf4d66ae62d1545f49317, type: 3}
-  m_Name: quiz
+  m_Name: New Item
   m_EditorClassIdentifier: 
-  itemName: pass
-  itemDes: You passed the exam with effort
-  itemSprite: {fileID: 21300000, guid: 871de1f2ffb6895488688ba743f9d589, type: 3}
-  number: 1
+  itemName: test
+  itemDes: wwwww
+  itemSprite: {fileID: 21300000, guid: 0b8df1e9ca0458342b5a98b39568e71b, type: 3}
+  number: 0

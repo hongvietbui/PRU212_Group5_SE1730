@@ -34,7 +34,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("QuestionTrigger"))
+        if (other.gameObject.CompareTag("QuestionTrigger")&&(isInRange == true))
         {
             dialoguePanel.SetActive(false);
             questionPanel.SetActive(false);
