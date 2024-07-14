@@ -5654,7 +5654,7 @@ Transform:
   m_GameObject: {fileID: 677803108}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.48, y: 2.98, z: 0}
+  m_LocalPosition: {x: -13.16, y: 2.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6664,7 +6664,7 @@ Transform:
   m_GameObject: {fileID: 948940268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.17, y: -2.05, z: 0}
+  m_LocalPosition: {x: -13.44, y: -2.05, z: 0}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7329,7 +7329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1217557592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8228,7 +8228,9 @@ MonoBehaviour:
   quizBackground: {fileID: 0}
   questionPanel: {fileID: 828093657}
   result: {fileID: 2046170552}
+  quiz: {fileID: 0}
   closeButton: {fileID: 568392702}
+  itemData: {fileID: 0}
 --- !u!50 &1786361826
 Rigidbody2D:
   serializedVersion: 4

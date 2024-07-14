@@ -10,20 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
-  m_Name: RoomDialouge4
+  m_Name: EnterBetaBuilding
   m_EditorClassIdentifier: 
   elements:
   - ids: dialogue_1
     idi: 1
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Player
-    message: I should probably check the schedule on the computer.
+    title: Narrator
+    message: Go inside beta building?
     audio: {fileID: 0}
-    follows: []
-    auto_next_idi: 2
+    follows:
+    - next_idi: 2
+      message: Yes
+      requ: 
+      er: 0
+    - next_idi: 3
+      message: No
+      requ: 
+      er: 0
+    auto_next_idi: 1
   - ids: dialogue_2
     idi: 2
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Narrator
+    message: //call,move_to_beta_building
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 1
+  - ids: dialogue_3
+    idi: 3
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Narrator

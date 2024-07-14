@@ -31,13 +31,14 @@ namespace narrenschlag.dialoguez
         // Define events for game start and after animation
         public UnityEvent OnGameStart;
         public UnityEvent OnAfterAnimation;
-
+        public GameObject dan_pcAfterPass;
+       
         void Start()
         {
            // Ensure the interact canvas is initially hidden
             interactCanvas.gameObject.SetActive(false);
-
-          //  Ensure the interact text is initially disabled
+            dan_pcAfterPass.gameObject.SetActive(false);
+            //  Ensure the interact text is initially disabled
             interactText.SetActive(false);
 
          //   Ensure the dialogue canvas is initially hidden
@@ -57,7 +58,7 @@ namespace narrenschlag.dialoguez
 
           //  Subscribe to the dialogue end event
            InstructionDialouge.gameObject.SetActive(false);
-
+            
            //  Trigger the game start event
             OnGameStart.Invoke();
            InstructionDialouge.gameObject.SetActive(true);
