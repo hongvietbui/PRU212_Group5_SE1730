@@ -17,17 +17,26 @@ MonoBehaviour:
     idi: 1
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Narrator
-    message: This is the dialogue after picked up
+    title: Inner Soul
+    message: Are you okay? How are you feeling?
     audio: {fileID: 0}
-    follows: []
+    follows:
+    - next_idi: 2
+      message: Okay
+      requ: 
+      er: 0
+    - next_idi: 2
+      message: No. I'm not okay.
+      requ: 
+      er: 0
     auto_next_idi: 2
   - ids: dialogue_2
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: MainCharacter
-    message: Thank you
+    title: Inner Soul
+    message: I am the fragment of emotion from shattered, disrupted efforts. Every
+      time you feel failure, I appear.
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 3
@@ -39,5 +48,14 @@ MonoBehaviour:
     message: //call,hide_dialogue
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 2
+    auto_next_idi: 4
+  - ids: dialogue_4
+    idi: 4
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 0
+    title: Narrator
+    message: Type your message here!
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 3
   auto_save: 0
