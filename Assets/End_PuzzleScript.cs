@@ -8,7 +8,8 @@ public class End_PuzzleScript : MonoBehaviour
     public Item innerSoul;
     public GameObject player;
 
-    public UnityEvent eventStartByLoading;
+    public UnityEvent theThinkerEventStartByLoading;
+    public UnityEvent bookEventStartByLoading;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +17,13 @@ public class End_PuzzleScript : MonoBehaviour
         foreach(var item in items)
         {
             if (item.itemName == "The Thinker") {
-                eventStartByLoading.Invoke();
-                
-                break;
+                theThinkerEventStartByLoading.Invoke();
+                continue;
+            }
+
+            if (item.itemName == "Book") {
+                bookEventStartByLoading.Invoke(); 
+                continue;
             }
         }
     }
