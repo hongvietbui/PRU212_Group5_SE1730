@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PhotoDialogue
   m_EditorClassIdentifier: 
   elements:
-  - ids: dialogue_1
+  - ids: dialogue_2
     idi: 1
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
@@ -22,7 +22,7 @@ MonoBehaviour:
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
-  - ids: dialogue_2
+  - ids: dialogue_3
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
@@ -31,7 +31,7 @@ MonoBehaviour:
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 3
-  - ids: dialogue_3
+  - ids: dialogue_4
     idi: 3
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
@@ -40,7 +40,7 @@ MonoBehaviour:
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 4
-  - ids: dialogue_4
+  - ids: dialogue_5
     idi: 4
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
@@ -49,4 +49,21 @@ MonoBehaviour:
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 3
+  - ids: dialogue_1
+    idi: 5
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Inner Soul
+    message: You good ?? How you feeling ??
+    audio: {fileID: 0}
+    follows:
+    - next_idi: 1
+      message: Yeah, I'm fine
+      requ: 
+      er: 0
+    - next_idi: 1
+      message: No, I'm not good
+      requ: 
+      er: 0
+    auto_next_idi: 4
   auto_save: 0
