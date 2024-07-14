@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene5_ExitClassroom.unity
     guid: 038574dd5e3bbe84788a429556445297
+  - enabled: 1
+    path: Assets/Scenes/CutSceneEnd.unity
+    guid: a14e2e619e212e6449c6debc6d40acb7
   m_configObjects: {}
