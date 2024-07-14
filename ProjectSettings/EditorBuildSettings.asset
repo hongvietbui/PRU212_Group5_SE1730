@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/DemoCT2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/DreamScence.unity
@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/PhotoPuzzle.unity
     guid: 5342f60ef4edafc4e967e9251c213c77
   - enabled: 1
+    path: Assets/Scenes/Scene5.unity
+    guid: 51a9fe1efd9979244bdd91482c64269d
+  - enabled: 1
     path: Assets/Scenes/Scene5_ExitClassroom.unity
     guid: 038574dd5e3bbe84788a429556445297
+  - enabled: 1
+    path: Assets/Scenes/Hallway.unity
+    guid: 8a32cf59c4ad97f4a8acd82087b43717
   m_configObjects: {}

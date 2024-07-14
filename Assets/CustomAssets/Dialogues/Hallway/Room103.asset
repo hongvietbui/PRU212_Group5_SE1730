@@ -27,8 +27,17 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Character
-    message: Get in now !!!!//quit
+    message: Get in now !!!!
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 1
+    auto_next_idi: 3
+  - ids: dialogue_3
+    idi: 3
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Narrator
+    message: //call,hide_dialogue
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 2
   auto_save: 0
