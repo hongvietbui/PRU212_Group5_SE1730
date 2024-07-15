@@ -86,8 +86,8 @@ public class ItemButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         else
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendFormat("<color=black><size=22>Item: </size></color> <color=orange><size=15>{0}</size></color>\n\n", _item.itemName);
-            stringBuilder.AppendFormat("<color=black><size=22>Description:</size> <size=12><color=grey>{0   }</color></size></color>\n\n", _item.itemDes);
+            stringBuilder.AppendFormat("<color=black><size=23>Item: </size></color> <color=black><size=18>{0}</size></color>\n\n", _item.itemName);
+            stringBuilder.AppendFormat("<color=black><size=23>Description:</size> <size=16><color=black>{0   }</color></size></color>\n\n", _item.itemDes);
             return stringBuilder.ToString();
         }
     }
