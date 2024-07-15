@@ -41,8 +41,8 @@ public class PlayerControllerCT2 : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2 (horizontal*speed, rb.velocity.y);
-        Vector3 characterScale = new (horizontal * 0.5f, 0.5f, 0.5f);
-        if(horizontal != 0) transform.localScale = characterScale;
+        //Vector3 characterScale = new (horizontal * 0.5f, 0.5f, 0.5f);
+        //if(horizontal != 0) transform.localScale = characterScale;
     }
 
 

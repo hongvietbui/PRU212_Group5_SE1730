@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene5_Rooftop.unity
     guid: 80fdd84a415b52b47a7e4cc658c358f4
+  - enabled: 1
+    path: Assets/Scenes/CutSceneEnd.unity
+    guid: a14e2e619e212e6449c6debc6d40acb7
   m_configObjects: {}
