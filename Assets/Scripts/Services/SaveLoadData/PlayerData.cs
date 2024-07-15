@@ -9,7 +9,7 @@ public class PlayerData : MonoBehaviour
     private void Awake()
     {
 
-        LoadPlayerPosition();
+        //LoadPlayerPosition();
     }
 
     private void OnApplicationQuit()
