@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/To\xE0 beta/Thu vien.unity"
     guid: cbf84115e133bc146b444dacaff26d8d
+  - enabled: 1
+    path: Assets/Scenes/BookShelf.unity
+    guid: cfdfa31ce64986045bfba87f5354d483
   m_configObjects: {}
