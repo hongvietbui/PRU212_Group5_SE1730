@@ -10,41 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
-  m_Name: EnterBetaBuilding
+  m_Name: DialogueZ Base
   m_EditorClassIdentifier: 
   elements:
   - ids: dialogue_1
     idi: 1
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Narrator
-    message: Go inside beta building?
-    audio: {fileID: 8300000, guid: fe18b97d831f71345a2606cd31142f26, type: 3}
-    follows:
-    - next_idi: 2
-      message: Yes
-      requ: 
-      er: 0
-    - next_idi: 3
-      message: No
-      requ: 
-      er: 0
-    auto_next_idi: 1
+    title: Player
+    message: We meet again!
+    audio: {fileID: 8300000, guid: 01892978b6fb7ad428bac286a2131605, type: 3}
+    follows: []
+    auto_next_idi: 2
   - ids: dialogue_2
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Narrator
-    message: //call,move_to_beta_building
+    title: InnerSoul Self
+    message: Yeah we are and you dissapointed me!!!
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 1
+    auto_next_idi: 3
   - ids: dialogue_3
     idi: 3
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Narrator
-    message: //call,hide_dialogue
+    title: InnerSoul Self
+    message: Come Close Me Im will show what you holding inside you//quit
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2

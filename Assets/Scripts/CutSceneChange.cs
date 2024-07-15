@@ -19,14 +19,8 @@ public class CutSceneChange : MonoBehaviour
         // Play the video on start
         videoPlayer.Play();
 
-        // Optional: Add a callback for when the video finishes
-        videoPlayer.loopPointReached += OnVideoEnd;
+
     }
 
-    void OnVideoEnd(VideoPlayer vp)
-    {
-        // Transition to the gameplay scene
-        // For example, load the next scene
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
-    }
+  
 }
