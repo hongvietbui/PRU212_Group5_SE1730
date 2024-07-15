@@ -752,7 +752,7 @@ MonoBehaviour:
   - {fileID: 0}
   reloadButton: {fileID: 624889669}
   cancelButton: {fileID: 2137289448}
-  ClassPhoto: {fileID: 0}
+  ClassPhoto: {fileID: 11400000, guid: 3add3a82b219b6646b28bb65e6bdb59f, type: 2}
   canvas: {fileID: 1175561870}
 --- !u!4 &1109394672
 Transform:
@@ -893,6 +893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1494337348}
+  - component: {fileID: 1494337349}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -915,6 +916,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1494337349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494337347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9975f313e011774caaa3647c9f0e1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2137289446
 GameObject:
   m_ObjectHideFlags: 0
