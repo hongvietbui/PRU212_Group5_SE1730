@@ -21,6 +21,14 @@ public class QuizManager : MonoBehaviour
     public GameObject Interact;
     public GameObject Square;
     public GameObject Square2;
+    public Image pass;
+    public Image notPass;
+    
+
+
+
+
+
     private string[] questions = new string[]
 {
     "1. When you feel academic pressure, what should you do first?",
@@ -56,18 +64,18 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         OnGameStart.Invoke();
-        List<Item> items = InventoryManager.Instance.items;
-        Debug.Log(items.Count);
-        foreach (Item item in items)
-        {
-            if(item.itemName == itemData.itemName)
-            {
-                quiz.SetActive(false);
-                Square2.gameObject.SetActive(false);
-                Square.gameObject.SetActive(false);
-            }
- 
-        }
+        //List<Item> items = InventoryManager.Instance.items;
+        //Debug.Log(items.Count);
+        //foreach (Item item in items)
+        //{
+        //    if (item.itemName == itemData.itemName)
+        //    {
+        //        quiz.SetActive(false);
+        //        Square2.gameObject.SetActive(false);
+        //        Square.gameObject.SetActive(false);
+        //    }
+
+        //}
         quizBackground.SetActive(false);
         questionPanel.SetActive(false);
         result.SetActive(false);
@@ -108,11 +116,11 @@ public class QuizManager : MonoBehaviour
             quizBackground.SetActive(false);
             questionPanel.SetActive(false);
             result.SetActive(true);
-            
-            resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. You receive an A+ soul fragment";
+
             if (score >= 5)
             {
                 resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. You receive an A+ soul fragment";
+                pass.gameObject.SetActive(true);
                 InventoryManager.Instance.AddItem(itemData);
                 OnPuzzelEnd.Invoke();
                 Interact.gameObject.SetActive(false);
@@ -122,6 +130,7 @@ public class QuizManager : MonoBehaviour
             else
             {
                 resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. Try harder to get rewards";
+                notPass.gameObject.SetActive(true);
             }
         }
     }
