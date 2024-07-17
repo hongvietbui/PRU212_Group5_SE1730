@@ -173,6 +173,7 @@ public class BookshelfManager : MonoBehaviour
     {
         congratulationsImage.SetActive(true); // Show congratulations image
         yield return new WaitForSeconds(3f); // Wait for 3 seconds
+        InventoryManager.Instance.AddItem(ItemBook); // Add the book to the inventory
         SceneManager.LoadScene("Thu vien"); // Load scene "AAA"
     }
 

@@ -2547,11 +2547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.7
+      value: -30.02
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.93
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2653,7 +2653,7 @@ MonoBehaviour:
   groundCheck: {fileID: 232274143}
   Char_speed: 0
   wSpeed: 6
-  rSpeed: 8
+  rSpeed: 6
   jumpForce: 5.5
 --- !u!1 &808360686
 GameObject:
@@ -5205,6 +5205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 0}
   questionPanel: {fileID: 0}
+  time: 0
 --- !u!212 &1451956585
 SpriteRenderer:
   m_ObjectHideFlags: 0
