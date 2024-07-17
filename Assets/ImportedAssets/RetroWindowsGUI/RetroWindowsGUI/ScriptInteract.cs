@@ -56,6 +56,7 @@ public class ScriptInteract : MonoBehaviour
                 Square2.gameObject.SetActive(false);
                 Enemy.gameObject.SetActive(false);
                 DialougeCanvas.gameObject.SetActive(false);
+                Player.transform.position = new Vector3(10.42f, -5.3f, -2f);
             }
         }
 
