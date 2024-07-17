@@ -31,22 +31,22 @@ public class ItemButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         InventoryManager.instance.RemoveItem(GetThisItem());
 
         //Once we press the colse button, We have to Update the current thisItem
-        //thisItem = GetThisItem();
-        //if (thisItem != null)
-        //{
-        //    //SHOW TOOLTIP
-        //    tooltip.ShowTooltip();
+        thisItem = GetThisItem();
+        if (thisItem != null)
+        {
+            //SHOW TOOLTIP
+            tooltip.ShowTooltip();
 
-        //    tooltip.UpdateTooltip(GetDetailText(thisItem));
-        //    RectTransformUtility.ScreenPointToLocalPointInRectangle(GameObject.Find("Canvas").transform as RectTransform, Input.mousePosition, null, out position);
-        //    tooltip.SetPosition(position);
-        //}
-        //else
-        //{
-        //    //HIDE TOOLTIP
-        //    tooltip.HideTooltip();
-        //    tooltip.UpdateTooltip("");//CLEAR
-        //}
+            tooltip.UpdateTooltip(GetDetailText(thisItem));
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(GameObject.Find("Canvas").transform as RectTransform, Input.mousePosition, null, out position);
+            tooltip.SetPosition(position);
+        }
+        else
+        {
+            //HIDE TOOLTIP
+            tooltip.HideTooltip();
+            tooltip.UpdateTooltip("");//CLEAR
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -86,8 +86,8 @@ public class ItemButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         else
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendFormat("<color=black><size=23>Item: </size></color> <color=black><size=18>{0}</size></color>\n\n", _item.itemName);
-            stringBuilder.AppendFormat("<color=black><size=23>Description:</size> <size=16><color=black>{0   }</color></size></color>\n\n", _item.itemDes);
+            stringBuilder.AppendFormat("Item: " + _item.itemName + "\n");
+            stringBuilder.AppendFormat("Description: " +  _item.itemDes);
             return stringBuilder.ToString();
         }
     }

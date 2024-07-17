@@ -9,6 +9,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (collision.CompareTag("Player")) // Change "Player" to the tag of the object that triggers the change
         {
+
             SceneManager.LoadScene(sceneName);
         }
     }

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
+  m_Name: OnStart
+  m_EditorClassIdentifier: 
+  elements:
+  - ids: dialogue_1
+    idi: 1
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Character
+    message: Wow!! I did not know i been here this early !!!!
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 2
+  - ids: dialogue_2
+    idi: 2
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Character
+    message: It just me ..... Others ..... didn't arrived yet ??
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 3
+  - ids: dialogue_3
+    idi: 3
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Character
+    message: On a test day !!!
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 4
+  - ids: dialogue_4
+    idi: 4
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Character
+    message: Anyway I better get on my seat and get things prepared
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 5
+  - ids: dialogue_5
+    idi: 5
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Narrator
+    message: Heyy !!! what is that ..... on the teacher table, maybe i can check
+      it out//quit
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 4
+  auto_save: 0
