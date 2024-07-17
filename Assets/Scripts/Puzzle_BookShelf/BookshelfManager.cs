@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -158,22 +159,21 @@ public class BookshelfManager : MonoBehaviour
             if (books[i].name[0].ToString().ToLower() != correctOrder[i].ToString().ToLower())
             {
                 isCorrect = false;
-              break;
+                break;
             }
         }
 
         if (isCorrect)
         {
-            InventoryManager.Instance.AddItem(ItemBook);
-            DisplayCompletionMessage();
+            StartCoroutine(DisplayCompletionAndLoadScene());
         }
     }
 
-    private void DisplayCompletionMessage()
+    private IEnumerator DisplayCompletionAndLoadScene()
     {
         congratulationsImage.SetActive(true); // Show congratulations image
-        // Optionally, transition to another screen
-       // SceneManager.LoadScene("AAA"); // Load scene "AAA"
+        yield return new WaitForSeconds(3f); // Wait for 3 seconds
+        SceneManager.LoadScene("Thu vien"); // Load scene "AAA"
     }
 
     private void UpdateCorrectBooksText()
