@@ -17,8 +17,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {   
-        if(quizManager.finished) enabled = false;
-        else if (isInRange && Input.GetKeyDown(KeyCode.E))
+        if (isInRange && Input.GetKeyDown(KeyCode.E) && !quizManager.finished)
         {
             dialoguePanel.SetActive(false);
             quizManager.StartQuiz();

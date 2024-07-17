@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CutSceneEnd.unity
     guid: a14e2e619e212e6449c6debc6d40acb7
+  - enabled: 1
+    path: Assets/Scenes/Chapter2.2.unity
+    guid: 75d5f127a85d4cd40bb6f2f312b7548e
   m_configObjects: {}
