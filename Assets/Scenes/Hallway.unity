@@ -1189,6 +1189,55 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!1 &978872365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978872367}
+  - component: {fileID: 978872366}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &978872366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978872365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b4183cf69abf445b9a766ddf001ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusicList:
+  - {fileID: 8300000, guid: 586a8ea4b7821c141b84822b7014beaf, type: 3}
+  effectList:
+  - {fileID: 8300000, guid: 0c7b7727c86dc014bb689ad419ac56b0, type: 3}
+  backgroundMusicToPlayName: prologue
+--- !u!4 &978872367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978872365}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -44.35323, y: -0.76034755, z: -0.031265948}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1057383031 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4059650706708931090, guid: 2fbb61000ea443e4488b7eb505d5c1ee, type: 3}
@@ -3357,3 +3406,4 @@ SceneRoots:
   - {fileID: 429638340}
   - {fileID: 2070415705}
   - {fileID: 228998091}
+  - {fileID: 978872367}
