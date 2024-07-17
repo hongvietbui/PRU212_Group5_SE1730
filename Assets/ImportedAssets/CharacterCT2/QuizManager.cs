@@ -68,18 +68,18 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         OnGameStart.Invoke();
-        //List<Item> items = InventoryManager.Instance.items;
-        //Debug.Log(items.Count);
-        //foreach (Item item in items)
-        //{
-        //    if (item.itemName == itemData.itemName)
-        //    {
-        //        quiz.SetActive(false);
-        //        Square2.gameObject.SetActive(false);
-        //        Square.gameObject.SetActive(false);
-        //    }
+        List<Item> items = InventoryManager.Instance.items;
+        Debug.Log(items.Count);
+        foreach (Item item in items)
+        {
+            if (item.itemName == itemData.itemName)
+            {
+                quiz.SetActive(false);
+                Square2.gameObject.SetActive(false);
+                Square.gameObject.SetActive(true);
+            }
 
-        //}
+        }
         quizBackground.SetActive(false);
         questionPanel.SetActive(false);
         result.SetActive(false);
@@ -99,9 +99,10 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            if(quizStart)
+            if(quizStart && !finished)
             {
                 ShowResult();
+
             }
             quizStart = false;
             enabled = false; 
@@ -163,7 +164,7 @@ public class QuizManager : MonoBehaviour
             OnPuzzelEnd.Invoke();
             Interact.gameObject.SetActive(false);
             Square2.gameObject.SetActive(false);
-            Square.gameObject.SetActive(false);
+            Square.gameObject.SetActive(true);
         }
         else
         {
@@ -188,5 +189,12 @@ public class QuizManager : MonoBehaviour
     public void CloseResultText()
     {
         result.SetActive(false);
+    }
+
+    public void Retake()
+    {
+        finished = false;
+        result.SetActive(false);
+        Debug.Log("set");
     }
 }
