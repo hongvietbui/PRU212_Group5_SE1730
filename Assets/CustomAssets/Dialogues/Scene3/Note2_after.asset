@@ -18,7 +18,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Narrator
-    message: This is the note 2 after you interact with that
+    message: Damn... It's too hard to find all of them
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
@@ -27,7 +27,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Main Character
-    message: Yeah thanks...
+    message: I think I've better go to the library...
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 3

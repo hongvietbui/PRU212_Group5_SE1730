@@ -18,9 +18,8 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Narrator
-    message: You find a small piece of paper tucked under a tree root. It's as if
-      it's waiting for someone to discover it.
-    audio: {fileID: 0}
+    message: You founded the note 1
+    audio: {fileID: 8300000, guid: 8d8d7cc3a6af5c04daedd6ff165fdb1a, type: 3}
     follows: []
     auto_next_idi: 2
   - ids: dialogue_2
