@@ -36,7 +36,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Narrator
-    message: There will be a person that will help me not alone ?
+    message: Someone is really want to make my day!
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 4

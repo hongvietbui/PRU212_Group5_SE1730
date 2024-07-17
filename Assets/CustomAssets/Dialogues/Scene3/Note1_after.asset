@@ -17,8 +17,8 @@ MonoBehaviour:
     idi: 1
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Narrator
-    message: This is the dialogue after picked up
+    title: Player
+    message: Hmm someone is really one to play with me?
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
@@ -27,7 +27,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: MainCharacter
-    message: Thank you
+    message: Whatever... thank you...
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 3
