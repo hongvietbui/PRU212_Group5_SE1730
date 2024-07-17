@@ -23,9 +23,13 @@ public class QuizManager : MonoBehaviour
     public GameObject Square2;
     public Image pass;
     public Image notPass;
-    
 
 
+
+    private float currentTime;
+    public TextMeshProUGUI timerText;
+    private bool quizStart = false;
+    public bool finished = false;
 
 
 
@@ -64,18 +68,18 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         OnGameStart.Invoke();
-        //List<Item> items = InventoryManager.Instance.items;
-        //Debug.Log(items.Count);
-        //foreach (Item item in items)
-        //{
-        //    if (item.itemName == itemData.itemName)
-        //    {
-        //        quiz.SetActive(false);
-        //        Square2.gameObject.SetActive(false);
-        //        Square.gameObject.SetActive(false);
-        //    }
+        List<Item> items = InventoryManager.Instance.items;
+        Debug.Log(items.Count);
+        foreach (Item item in items)
+        {
+            if (item.itemName == itemData.itemName)
+            {
+                quiz.SetActive(false);
+                Square2.gameObject.SetActive(false);
+                Square.gameObject.SetActive(true);
+            }
 
-        //}
+        }
         quizBackground.SetActive(false);
         questionPanel.SetActive(false);
         result.SetActive(false);
@@ -86,9 +90,37 @@ public class QuizManager : MonoBehaviour
    
     }
 
-    private void Update()
+    void Update()
     {
-        
+        if (currentTime > 0)
+        {
+            currentTime -= Time.deltaTime;
+            UpdateTimerText();
+        }
+        else
+        {
+            if(quizStart && !finished)
+            {
+                ShowResult();
+
+            }
+            quizStart = false;
+            enabled = false; 
+        }
+    }
+
+    void UpdateTimerText()
+    {
+        int minutes = Mathf.FloorToInt(currentTime / 60);
+        int seconds = Mathf.FloorToInt(currentTime % 60);
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    // Hàm này dùng để reset lại đồng hồ
+    public void ResetTimer(float newTime)
+    {
+        currentTime = newTime;
+        enabled = true; // Kích hoạt lại script nếu nó đã bị tắt
     }
 
     public void StartQuiz()
@@ -98,6 +130,7 @@ public class QuizManager : MonoBehaviour
         quizBackground.SetActive(true);
         questionPanel.SetActive(true);
         ShowQuestion();
+        quizStart = true;
     }
 
     public void ShowQuestion()
@@ -113,25 +146,32 @@ public class QuizManager : MonoBehaviour
         else
         {
 
-            quizBackground.SetActive(false);
-            questionPanel.SetActive(false);
-            result.SetActive(true);
-
-            if (score >= 5)
-            {
-                resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. You receive an A+ soul fragment";
-                pass.gameObject.SetActive(true);
-                InventoryManager.Instance.AddItem(itemData);
-                OnPuzzelEnd.Invoke();
-                Interact.gameObject.SetActive(false);
-                Square2.gameObject.SetActive(false);
-                Square.gameObject.SetActive(true);
-            }
-            else
-            {
-                resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. Try harder to get rewards";
-                notPass.gameObject.SetActive(true);
-            }
+            ShowResult();
+        }
+    }
+    public void ShowResult()
+    {
+        quizBackground.SetActive(false);
+        questionPanel.SetActive(false);
+        result.SetActive(true);
+        finished = true;
+        if (score >= 5)
+        {
+            resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. You receive an A+ soul fragment";
+            pass.gameObject.SetActive(true);
+            notPass.gameObject.SetActive(false);
+            InventoryManager.Instance.AddItem(itemData);
+            OnPuzzelEnd.Invoke();
+            Interact.gameObject.SetActive(false);
+            Square2.gameObject.SetActive(false);
+            Square.gameObject.SetActive(true);
+        }
+        else
+        {
+            resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. Try harder to get rewards";
+            Interact.gameObject.SetActive(false);
+            notPass.gameObject.SetActive(true);
+            pass.gameObject.SetActive(false);
         }
     }
 
@@ -149,5 +189,12 @@ public class QuizManager : MonoBehaviour
     public void CloseResultText()
     {
         result.SetActive(false);
+    }
+
+    public void Retake()
+    {
+        finished = false;
+        result.SetActive(false);
+        Debug.Log("set");
     }
 }

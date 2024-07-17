@@ -1,24 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
-public class CutSceneChange : MonoBehaviour
+public class cutsceneStair : MonoBehaviour
 {
+    // Start is called before the first frame update
     public VideoPlayer videoPlayer;
-    public GameObject gameOverCanvas;  // Reference to the Game Over canvas
     public string sceneName;
+
+    // Start is called before the first frame update
+
     void Start()
     {
         // Ensure the video player is assigned
         if (videoPlayer == null)
         {
             videoPlayer = GetComponent<VideoPlayer>();
-        }
-
-        // Ensure the game over canvas is initially hidden
-        if (gameOverCanvas != null)
-        {
-            gameOverCanvas.SetActive(false);
         }
 
         // Play the video on start
@@ -30,16 +29,10 @@ public class CutSceneChange : MonoBehaviour
 
     void OnVideoEnd(VideoPlayer vp)
     {
-        // Display the Game Over canvas when the video ends
-        if (gameOverCanvas != null)
-        {
-            gameOverCanvas.SetActive(true);
-        }
-    }
-
-    // Method to be called by the button in the Game Over canvas
-    public void ChangeScene()
-    {
         SceneManager.LoadScene(sceneName);
+
+
     }
+  
+
 }
