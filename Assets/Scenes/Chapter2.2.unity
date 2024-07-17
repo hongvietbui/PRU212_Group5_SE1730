@@ -2547,11 +2547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.12
+      value: 26.7
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.72
+      value: 1.93
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6857,7 +6857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9144f238b2ea10f409e5f1396ed68848, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Scene5_Rooftop
+  sceneName: CutSceneStairEnd
 --- !u!1 &1822580819
 GameObject:
   m_ObjectHideFlags: 0
