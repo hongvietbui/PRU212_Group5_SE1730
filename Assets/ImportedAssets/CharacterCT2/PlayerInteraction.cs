@@ -8,6 +8,7 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject questionPanel;
     private bool isInRange = false;
     private QuizManager quizManager;
+    public float time;
 
     void Start()
     {
@@ -15,17 +16,18 @@ public class PlayerInteraction : MonoBehaviour
     }
 
     void Update()
-    {
-        if (isInRange && Input.GetKeyDown(KeyCode.E))
+    {   
+        if (isInRange && Input.GetKeyDown(KeyCode.E) && !quizManager.finished)
         {
             dialoguePanel.SetActive(false);
             quizManager.StartQuiz();
+            quizManager.ResetTimer(time);
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("QuestionTrigger"))
+        if (other.gameObject.CompareTag("Player") && !quizManager.finished)
         {
             dialoguePanel.SetActive(true);
             isInRange = true;
@@ -34,7 +36,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("QuestionTrigger")&&(isInRange == true))
+        if (other.gameObject.CompareTag("Player")&&(isInRange == true))
         {
             dialoguePanel.SetActive(false);
             questionPanel.SetActive(false);
