@@ -5571,7 +5571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29ca31e832c56484bbaac2ada23bf943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuCanvas: {fileID: 0}
+  pauseMenuCanvas: {fileID: 321755737}
 --- !u!114 &321755739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31373,7 +31373,7 @@ GameObject:
   - component: {fileID: 1238451627}
   - component: {fileID: 1238451628}
   m_Layer: 5
-  m_Name: SettingPanel (1)
+  m_Name: 'SettingPanel '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

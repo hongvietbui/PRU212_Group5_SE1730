@@ -11,13 +11,27 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     private Vector2 lastMovement;
 
+    private bool isPaused = false;
+
     public bool isDialogueActive = false;
+
+    private InputManager inputManager;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        inputManager = InputManager.Instance;
+        inputManager.inputActions.Player.Move.performed += ctx => movement = ctx.ReadValue<Vector2>();
+        inputManager.inputActions.Player.Move.canceled += ctx =>
+        {
+            rigidbody2D.velocity = Vector2.zero;
+            movement = Vector2.zero;
+            animator.SetFloat("Speed", 0);
+        };
+        inputManager.inputActions.Player.OpenSettingsPause.performed += ctx => PauseMenuManager.Instance.TogglePauseMenu();
     }
 
     // Update is called once per frame
@@ -31,8 +45,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
 
         if (movement != Vector2.zero)
         {
@@ -81,6 +93,17 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Obstacle")
         {
             rigidbody2D.velocity = Vector2.zero;
+        }
+    }
+
+    public void SetPauseState(bool pause)
+    {
+        isPaused = pause;
+        if (isPaused)
+        {
+            rigidbody2D.velocity = Vector2.zero;
+            movement = Vector2.zero;
+            animator.SetFloat("Speed", 0);
         }
     }
 }

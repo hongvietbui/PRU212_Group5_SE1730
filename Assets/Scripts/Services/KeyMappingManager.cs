@@ -23,15 +23,6 @@ public class KeyMappingManager : MonoBehaviour
     {
         UpdateInputFields();
 
-        //leftKeyInput.onValueChanged.AddListener(delegate { ValidateAndChangeKeyMapping("Left"); });
-        //rightKeyInput.onValueChanged.AddListener(delegate { ValidateAndChangeKeyMapping("Right"); });
-        //upKeyInput.onValueChanged.AddListener(delegate { ValidateAndChangeKeyMapping("Up"); });
-        //downKeyInput.onValueChanged.AddListener(delegate { ValidateAndChangeKeyMapping("Down"); });
-        //jumpKeyInput.onValueChanged.AddListener(delegate { ValidateAndChangeKeyMapping("Jump"); });
-        //interactKeyInput.onValueChanged.AddListener(delegate { ValidateAndChangeKeyMapping("Interact"); });
-        //inventoryKeyInput.onValueChanged.AddListener(delegate { ValidateAndChangeKeyMapping("Inventory"); });
-        //pauseKeyInput.onValueChanged.AddListener(delegate { ValidateAndChangeKeyMapping("Pause"); });
-
         leftKeyInput.onValueChanged.AddListener(delegate { ChangeKeyMapping("Left"); });
         rightKeyInput.onValueChanged.AddListener(delegate { ChangeKeyMapping("Right"); });
         upKeyInput.onValueChanged.AddListener(delegate { ChangeKeyMapping("Up"); });
