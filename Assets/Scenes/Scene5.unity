@@ -159,7 +159,7 @@ Transform:
   m_GameObject: {fileID: 72647486}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -0.7, z: 0}
+  m_LocalPosition: {x: -9.2, y: -7.8, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -716,7 +716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!58 &489532226
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -826,7 +826,7 @@ Transform:
   m_GameObject: {fileID: 489532225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.7998, y: 5.2151, z: 0}
+  m_LocalPosition: {x: 0.09, y: -1.89, z: 0}
   m_LocalScale: {x: 2.4243283, y: 2.4633126, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1089,11 +1089,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 158371416040141330, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.54
+      value: -0.89
       objectReference: {fileID: 0}
     - target: {fileID: 158371416040141330, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.92
+      value: -2.96
       objectReference: {fileID: 0}
     - target: {fileID: 158371416040141330, guid: 836fe6a833a401442bc585b4a6bdc13f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1652,11 +1652,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.76
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.74
+      value: -3.56
       objectReference: {fileID: 0}
     - target: {fileID: 5341593029655356850, guid: 786d6c96388563a418e38924dbc48007, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1728,6 +1728,7 @@ GameObject:
   - component: {fileID: 1203122578}
   - component: {fileID: 1203122577}
   - component: {fileID: 1203122581}
+  - component: {fileID: 1203122582}
   m_Layer: 0
   m_Name: Photo
   m_TagString: Player
@@ -1907,7 +1908,7 @@ Transform:
   m_GameObject: {fileID: 1203122575}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.75, y: 2.16, z: 0}
+  m_LocalPosition: {x: -8.11, y: -4.95, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1976,6 +1977,47 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1203122582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203122575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6a85df8c87e25d4b987948c8327bb1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 570096488}
+  OnGameStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 570096488}
+        m_TargetAssemblyTypeName: narrenschlag.dialoguez.DialogueZ, Assembly-CSharp
+        m_MethodName: SetDatabase
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c946ffc0ee4c5fb44b1f0ea8c3962c2e, type: 2}
+          m_ObjectArgumentAssemblyTypeName: narrenschlag.dialoguez.DialogueZBase,
+            Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 570096489}
+        m_TargetAssemblyTypeName: DialogueCanvasManager, Assembly-CSharp
+        m_MethodName: displayDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1406604144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,13 +2548,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151904777}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e600a81e8d6ff44593006755d8cdb52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 2027505639}
-  completionObject: {fileID: 489532225}
 --- !u!1 &2063654618
 GameObject:
   m_ObjectHideFlags: 0

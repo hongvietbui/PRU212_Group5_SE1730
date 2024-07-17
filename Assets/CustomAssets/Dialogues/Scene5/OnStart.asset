@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a109d858780a98249aca1c70de0e8341, type: 3}
-  m_Name: PhotoDialogueAfter
+  m_Name: OnStart
   m_EditorClassIdentifier: 
   elements:
   - ids: dialogue_1
@@ -18,7 +18,7 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Character
-    message: I dont think i should leave !!!
+    message: Wow!! I did not know i been here this early !!!!
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 2
@@ -26,8 +26,8 @@ MonoBehaviour:
     idi: 2
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
-    title: Narrator
-    message: I'll have an exam in a few minutes !!!
+    title: Character
+    message: It just me ..... Others ..... didn't arrived yet ??
     audio: {fileID: 0}
     follows: []
     auto_next_idi: 3
@@ -36,8 +36,27 @@ MonoBehaviour:
     color_type: {r: 0, g: 1, b: 0, a: 1}
     eie: 1
     title: Character
-    message: Better get back to my seat !!!//quit
+    message: On a test day !!!
     audio: {fileID: 0}
     follows: []
-    auto_next_idi: 3
+    auto_next_idi: 4
+  - ids: dialogue_4
+    idi: 4
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Character
+    message: Anyway I better get on my seat and get things prepared
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 5
+  - ids: dialogue_5
+    idi: 5
+    color_type: {r: 0, g: 1, b: 0, a: 1}
+    eie: 1
+    title: Narrator
+    message: Heyy !!! what is that ..... on the teacher table, maybe i can check
+      it out//quit
+    audio: {fileID: 0}
+    follows: []
+    auto_next_idi: 4
   auto_save: 0
