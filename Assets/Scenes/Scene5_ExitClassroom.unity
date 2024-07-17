@@ -1026,6 +1026,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 962819762}
   questionPanel: {fileID: 322599553}
   time: 20
+
 --- !u!1 &143060601
 GameObject:
   m_ObjectHideFlags: 0

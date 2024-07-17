@@ -148,7 +148,6 @@ public class QuizManager : MonoBehaviour
             ShowResult();
         }
     }
-
     public void ShowResult()
     {
         quizBackground.SetActive(false);

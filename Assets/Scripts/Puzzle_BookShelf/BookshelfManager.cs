@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class BookshelfManager : MonoBehaviour
 {
+    public Item ItemBook;
     public List<GameObject> books;
     public Transform[] bookPositions;
 
@@ -157,12 +158,13 @@ public class BookshelfManager : MonoBehaviour
             if (books[i].name[0].ToString().ToLower() != correctOrder[i].ToString().ToLower())
             {
                 isCorrect = false;
-                break;
+              break;
             }
         }
 
         if (isCorrect)
         {
+            InventoryManager.Instance.AddItem(ItemBook);
             DisplayCompletionMessage();
         }
     }
