@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3ba8fb18ddbf4d66ae62d1545f49317, type: 3}
-  m_Name: New Item 1
+  m_Name: PhotoItem
   m_EditorClassIdentifier: 
   itemName: ClassPhoto
   itemDes: Class
