@@ -155,13 +155,14 @@ public class QuizManager : MonoBehaviour
         questionPanel.SetActive(false);
         result.SetActive(true);
         finished = true;
+        currentTime = 0;
         if (score >= 5)
         {
             resultText.text = "You answered " + score + " out of " + questions.Length + " questions correctly. You receive an A+ soul fragment";
             pass.gameObject.SetActive(true);
             notPass.gameObject.SetActive(false);
             InventoryManager.Instance.AddItem(itemData);
-            OnPuzzelEnd.Invoke();
+            //OnPuzzelEnd.Invoke();
             Interact.gameObject.SetActive(false);
             Square2.gameObject.SetActive(false);
             Square.gameObject.SetActive(true);
