@@ -23010,11 +23010,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"One rainy afternoon, they finally apologized. It was the 10th of the
-    month, and the time was 3:30 PM. I felt a weight lift off my shoulders."
-
-
-'
+  m_text: "The bullying never stops. It\u2019s a dark cloud over everything I do.
+    In my journal, I wrote the number **21** on a page, over and over again, as a
+    way to cope with the helplessness.\r\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b472e18c4d7d9e4aa36d637957f503a, type: 2}
   m_sharedMaterial: {fileID: 5156805223296794879, guid: 9b472e18c4d7d9e4aa36d637957f503a, type: 2}
@@ -25644,8 +25642,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"During math class on the 20th, they scribbled on my notebook. I counted
-    2 nasty messages before the teacher noticed. It was the 4th week of school."'
+  m_text: 'Every day at school was a struggle. The names they called me and the ridicule
+    became too much. One day, I found a note in my locker with the number **13**
+    scribbled on it. They said it was a bad omen, but to me, it was a silent cry
+    for help.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b472e18c4d7d9e4aa36d637957f503a, type: 2}
   m_sharedMaterial: {fileID: 5156805223296794879, guid: 9b472e18c4d7d9e4aa36d637957f503a, type: 2}
@@ -37097,7 +37099,7 @@ MonoBehaviour:
   puzzleCanvas: {fileID: 621928287}
   cancelButton: {fileID: 1136221775}
   inputText: {fileID: 813791955}
-  correctNumber: 15324
+  correctNumber: 131821
   RewardCanvas: {fileID: 977528952}
   rewardCancelButton: {fileID: 1283636167}
   Square1: {fileID: 426207149}
@@ -40237,8 +40239,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: On the first day of school, I was picked on by 3 classmates. They surrounded
-    me in the hallway, and I felt so alone. That day was the 15th.
+  m_text: "Being a student here is a nightmare. The harassment makes it hard to focus.
+    In one of my textbooks, the number **18** was circled in red ink. I\u2019m still
+    just a student trying to get through the day.\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9b472e18c4d7d9e4aa36d637957f503a, type: 2}
   m_sharedMaterial: {fileID: 5156805223296794879, guid: 9b472e18c4d7d9e4aa36d637957f503a, type: 2}
